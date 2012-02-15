@@ -23,12 +23,12 @@ So, The basic idea…
 ¦ +-------+ +-------+ +-------+ +-------+ ¦
 +-----------------------------------------+
 
-The container [c] needs two classes:
+The container [c] needs two class-names:
 
   1) .ingrid
   2) .in-fourths (or .in-thirds if there are 3 units).
   
-Each unit [u] within the container [u] needs the class:
+Each unit [u] within the container [u] needs the class-name:
 
   1) .unit
   
@@ -46,14 +46,14 @@ To tweak the layout we can combine units
 +-----------------------------------------+
 
 In this case the container [c] and units [u] have 
-the same classes as in the first example.
+the same class-names as in the first example.
 
-The difference is that we add the class .span-2 
+The difference is that we add the class-name .span-2 
 on the last unit (making it span the width of 
 two units).
 
-The span-x class can be used in any context 
-to combine units
+The span-x class-name can be used in any context 
+to combine units in any context (in-twos / thirds / fourths etc).
 
 ___________________________________________
 
@@ -92,6 +92,39 @@ The paddings are/can be set directly on each unit thanks to
 the border-box box model. And last but not least, the widths for 
 the paddings (again, thanks to border-box) work with em, % or 
 pixel units.
+
+___________________________________________
+
+
+Details
+
+Ingrid uses display: inline-block and border-box box model
+for laying out the individual units.
+
+Border-box makes it easy to set borders and padding (for gutters)
+directly on units. 
+
+Inline-block is just nice to work with and easy to reflow 
+for different layouts.
+
+The one negative with inline-bock is the additional white-space 
+that gets added between units. To remove the white-space evenly 
+across different browsers can seem bit hacky. So Ingrid tries her 
+best to get rid of the white-space. But the results are not 
+cross-browser pixel-perfect. But—really—Ingrid just doesn't care 
+about pixel-perfection in that sense anymore.
+
+Some nicer details with Ingrid is that we don't need to add 
+class-names like .first / .last / grid-6 / size1of5 etc. 
+on each unit.
+
+
+You could also skip the whole in-fourths / in-fifths class-names 
+that Ingrid provides and make your own semantic class names 
+for width hooks instead. 
+
+The container doesn't neither have to be called ".ingrid", change
+all these class-names to anything semantic or unsemantic you like!
 
 ___________________________________________
 

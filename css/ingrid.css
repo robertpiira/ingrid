@@ -3,6 +3,7 @@
 
 Author:   Robert Piirainen
 Home:     piira.se
+Twitter:  @robertpiira
 Created:  2011
 Updated:  2012/2/7
    
@@ -91,49 +92,27 @@ Updated:  2012/2/7
 .in-sevenths  .unit   { width: 14.2857143%; }
 
 /* Spatial units in thirds */
-.in-thirds    .span2  { width: 66.66666%; }
+.in-thirds    .span-2  { width: 66.66666%; }
 
 /* Spatial units in fourths */
-.in-fourths   .span2  { width: 50%; }
-.in-fourths   .span3  { width: 75%; }
+.in-fourths   .span-2  { width: 50%; }
+.in-fourths   .span-3  { width: 75%; }
 
 /* Spatial units in fifths */
-.in-fifths    .span2  { width: 40%; }
-.in-fifths    .span3  { width: 60%; }
-.in-fifths    .span4  { width: 80%; }
+.in-fifths    .span-2  { width: 40%; }
+.in-fifths    .span-3  { width: 60%; }
+.in-fifths    .span-4  { width: 80%; }
 
 /* Spatial units in sixths */
-.in-sixths    .span2  { width: 33.33333%; }
-.in-sixths    .span3  { width: 50%; }
-.in-sixths    .span4  { width: 66.66666%; }
-.in-sixths    .span5  { width: 83.3333333%; }
+.in-sixths    .span-2  { width: 33.33333%; }
+.in-sixths    .span-3  { width: 50%; }
+.in-sixths    .span-4  { width: 66.66666%; }
+.in-sixths    .span-5  { width: 83.3333333%; }
 
 /* Spatial units in sevenths */
-.in-sevenths  .span2  { width: 28.5714286%; }
-.in-sevenths  .span3  { width: 42.8571429%; }
-.in-sevenths  .span4  { width: 57.1428572%; }
-.in-sevenths  .span5  { width: 71.4285715%; }
-.in-sevenths  .span6  { width: 85.7142858%; }
+.in-sevenths  .span-2  { width: 28.5714286%; }
+.in-sevenths  .span-3  { width: 42.8571429%; }
+.in-sevenths  .span-4  { width: 57.1428572%; }
+.in-sevenths  .span-5  { width: 71.4285715%; }
+.in-sevenths  .span-6  { width: 85.7142858%; }
 
-
-
-
-/* PIXEL PERFECT (always comes with a price)
-   Trickery to get rid of inline-block whitespace
-   between units. Uncomment these lines if you're
-   looking for a 
---------------------------------------------------------*/
-/*
-.ingrid {
-  letter-spacing:-0.3em;
-  word-spacing:-0.3em;
-}
-.ingrid .unit *,
-.ingrid .field-unit * {
-  font-family: georgia, serif;
-}
-.unit,
-.field-unit {
-  font-family: 'courier new', 'DejaVu Sans Mono';
-}
-*/
