@@ -52,8 +52,8 @@ The difference is that we add the class-name .span-2
 on the last unit (making it span the width of 
 two units).
 
-The span-x class-name can be used in any context 
-to combine units in any context (in-twos / thirds / fourths etc).
+The span-x class-name can be used to combine units 
+in any context (in-twos / thirds / fourths etc).
 
 ___________________________________________
 
