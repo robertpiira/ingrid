@@ -99,7 +99,7 @@ Some nicer details with Ingrid is that we don't need to repeat class-names like 
 
 You could also skip the whole in-fourths / in-fifths class-names that Ingrid provides and make your own semantic class names for width hooks instead. 
 
-The container doesn't have to be called ".in-grid", change all these class-names to anything semantic or unsemantic you like!
+The container doesn't have to be called ".ingrid", change all these class-names to anything semantic or unsemantic you like!
 
 Don't forget that you can use negative margins and position relative positioning to changes the order of individual units. It's pretty easy to do with Ingrid.
 
