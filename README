@@ -8,4 +8,83 @@ Ingrid is heavily inspired by oocss grids (oocss.org).
 
 Ingrid is also meant to be an extensible system, easy to customize to your own needs.
 
-Ingrid loves cats.
+Ingrid loves cats :o)
+
+-------------------------------------------
+
+So, The basic idea…
+
++-------------------[c]-------------------+
+¦ +-------+ +-------+ +-------+ +-------+ ¦
+¦ |       | |       | |       | |       | ¦
+¦ |  [u]  | |  [u]  | |  [u]  | |  [u]  | ¦
+¦ |       | |       | |       | |       | ¦
+¦ +-------+ +-------+ +-------+ +-------+ ¦
++-----------------------------------------+
+
+The container [c] needs two classes:
+
+  1) .ingrid
+  2) .in-fourths (or .in-thirds if there are 3 units).
+  
+Each unit [u] within the container [u] needs the class:
+
+  1) .unit
+  
+-------------------------------------------
+
+To tweak the layout we can combine units
+
++-------------------[c]-------------------+
+¦ +-------+ +-------+ +-----------------+ ¦
+¦ |       | |       | |                 | ¦
+¦ |  [u]  | |  [u]  | |       [u]       | ¦
+¦ |       | |       | |                 | ¦
+¦ +-------+ +-------+ +-----------------+ ¦
++-----------------------------------------+
+
+In this case the container [c] has the same classes
+as in the first example.
+
+The difference we add the class .span-2 on the last unit.
+
+-------------------------------------------
+
+Units that need to span the whole width of the
+container use the class .field-unit [f].
+
++-------------------[c]-------------------+
+¦ +-------------------------------------+ ¦
+¦ |                 [f]                 | ¦
+¦ +-------------------------------------+ ¦
+¦ +-------+ +-------+ +-------+ +-------+ ¦
+¦ |       | |       | |       | |       | ¦
+¦ |  [u]  | |  [u]  | |  [u]  | |  [u]  | ¦
+¦ |       | |       | |       | |       | ¦
+¦ +-------+ +-------+ +-------+ +-------+ ¦
++-----------------------------------------+
+
+-------------------------------------------
+
+Gutters
+
+The gutters are made by first giving the container [c]
+negative left and right margins. 
+
+Each unit [u] needs a padding on each side that is equal to
+the containers negative margins.
+
+The gutters are preset to a certain width in ingrid.css. 
+But can be easily overridden and tweaked to your own preference 
+via classes that extend the ingrid container or directly 
+in ingrid.css.
+
+The padding are set directly on each unit thanks to 
+the border-box box model (sorry IE6-7 ).
+
+
+
+
+
+
+
