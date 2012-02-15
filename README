@@ -121,7 +121,7 @@ You could also skip the whole in-fourths / in-fifths class-names
 that Ingrid provides and make your own semantic class names 
 for width hooks instead. 
 
-The container doesn't neither have to be called ".ingrid", change
+The container doesn't neither have to be called ".in-grid", change
 all these class-names to anything semantic or unsemantic you like!
 
 ___________________________________________
