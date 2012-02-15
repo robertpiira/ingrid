@@ -17,7 +17,7 @@ Updated:  2012/2/7
 --------------------------------------------------------*/
 
 .ingrid {
-  margin: 0 -11px 0 -10px;
+  margin: 0 -13px;
   padding: 0;
   clear: both;
   list-style: none;
@@ -49,7 +49,7 @@ Updated:  2012/2/7
 
 .unit,
 .field-unit {
-  padding: 0 11px 0 10px;
+  padding: 0 13px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
