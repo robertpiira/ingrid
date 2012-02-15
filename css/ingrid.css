@@ -80,7 +80,7 @@ Updated:  2012/2/7
 
 
 
-/* UNITS 
+/* UNITS (these are set on .in-grid container)
    Divide units in...
 --------------------------------------------------------*/
 
@@ -90,6 +90,13 @@ Updated:  2012/2/7
 .in-fifths    .unit   { width: 20%; } 
 .in-sixths    .unit   { width: 16.6666666%; }
 .in-sevenths  .unit   { width: 14.2857143%; }
+
+
+
+
+/* SPATIALS (these are set on individual units)
+   Span units in...
+--------------------------------------------------------*/
 
 /* Spatial units in thirds */
 .in-thirds    .span-2  { width: 66.66666%; }
