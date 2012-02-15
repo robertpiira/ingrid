@@ -88,10 +88,8 @@ But these measures can easily be overridden/tweaked to your
 own preference via your own classes that extend the container 
 or directly in the ingrid css-file.
 
-The paddings are/can be set directly on each unit thanks to 
-the border-box box model. And last but not least, the widths for 
-the paddings (again, thanks to border-box) work with em, % or 
-pixel units.
+The padding for the gutters work with em, % or pixel units 
+(thanks to the CSS border-box box model).
 
 ___________________________________________
 
@@ -111,7 +109,7 @@ The one negative with inline-bock is the additional white-space
 that gets added between units. To remove the white-space evenly 
 across different browsers can seem bit hacky. So Ingrid tries her 
 best to get rid of the white-space. But the results are not 
-cross-browser pixel-perfect. But—really—Ingrid just doesn't care 
+cross-browser pixel-perfect. But really… Ingrid just doesn't care 
 about pixel-perfection in that sense anymore.
 
 Some nicer details with Ingrid is that we don't need to add 
