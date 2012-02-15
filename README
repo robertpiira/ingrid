@@ -1,6 +1,8 @@
 Hello, I'm Ingrid!
 
-Ingrid is a lightweight CSS layout system, who's main goal is to reduce the use of classes on individual units. Making it feel a bit less obtrusive and bit more fun to reflow for responsive layouts.
+Ingrid is a lightweight CSS layout system, who's main goal is to reduce the use of classes on individual units.
+
+Ingrid is a bit less obtrusive and bit more fun to reflow for responsive layouts.
 
 Ingrid is heavily inspired by oocss grids (oocss.org).
 
