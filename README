@@ -95,7 +95,7 @@ Inline-block is just nice to work with and easy to reflow for different layouts.
 
 The one negative with inline-bock is the additional white-space that gets added between units. To remove the white-space evenly across different browsers can seem bit hacky. So Ingrid tries her best to get rid of the white-space. But the results are not cross-browser pixel-perfect. But really… Ingrid just doesn't care about pixel-perfection in that sense anymore.
 
-Some nicer details with Ingrid is that we don't need to add class-names like .first / .last / grid-6 / size1of5 etc. on each unit.
+Some nicer details with Ingrid is that we don't need to repeat class-names like .first / .last / grid-6 / size1of5 etc. on each unit.
 
 You could also skip the whole in-fourths / in-fifths class-names that Ingrid provides and make your own semantic class names for width hooks instead. 
 
