@@ -28,7 +28,7 @@ The container [c] needs two class-names:
   1) .ingrid
   2) .in-fourths (or .in-thirds if there are 3 units).
   
-Each unit [u] within the container [u] needs the class-name:
+Each unit [u] within the container [c] needs the class-name:
 
   1) .unit
   
