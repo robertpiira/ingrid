@@ -1,12 +1,12 @@
 Hello, I'm Ingrid!
 
-Ingrid is a lightweight CSS layout system, who's main goal is to reduce the use of classes on individual units.
+Ingrid is a fluid CSS layout system, who's main goal is to reduce the use of classes on individual units.
 
 Ingrid is a bit less obtrusive and bit more fun to reflow for responsive layouts.
 
 Ingrid is heavily inspired by oocss grids (oocss.org).
 
-Ingrid is also meant to be an extensible system, easy to customize to your own needs.
+Ingrid is also meant to be an extendable system, easy to customize to your own needs.
 
 Ingrid loves cats :o)
 
@@ -45,16 +45,21 @@ To tweak the layout we can combine units
 ¦ +-------+ +-------+ +-----------------+ ¦
 +-----------------------------------------+
 
-In this case the container [c] has the same classes
-as in the first example.
+In this case the container [c] and units [u] have 
+the same classes as in the first example.
 
-The difference we add the class .span-2 on the last unit.
+The difference is that we add the class .span-2 
+on the last unit (making it span the width of 
+two units).
+
+The span-x class can be used in any context 
+to combine units
 
 ___________________________________________
 
 
-Units that need to span the whole width of the
-container use the class .field-unit [f].
+Units [f] that need to span the whole width of the
+container use the class .field-unit.
 
 +-------------------[c]-------------------+
 ¦ +-------------------------------------+ ¦
@@ -75,20 +80,24 @@ Gutters
 The gutters are made by first giving the container [c]
 negative left and right margins. 
 
-Each unit [u] needs a padding on each side that is equal to
-the containers negative margins.
+Each unit [u] has a padding on each side that is equal to
+the containers [c] negative margins.
 
-The gutters are preset to a certain width in ingrid.css. 
-But can be easily overridden and tweaked to your own preference 
-via classes that extend the ingrid container or directly 
-in ingrid.css.
+The gutters are set to a certain width in ingrid.css. 
+But these measures can easily be overridden/tweaked to your 
+own preference via your own classes that extend the container 
+or directly in the ingrid css-file.
 
-The padding are set directly on each unit thanks to 
-the border-box box model (sorry IE6-7 ).
+The paddings are/can be set directly on each unit thanks to 
+the border-box box model. And last but not least, the widths for 
+the paddings (again, thanks to border-box) work with em, % or 
+pixel units.
+
+___________________________________________
 
 
+Compability 
 
-
-
-
+Ingrid works just fine with IE8 + and all modern browsers.
+IE6-7 might need some extra help for not supporting border-box model.
 
