@@ -10,7 +10,8 @@ Ingrid is also meant to be an extensible system, easy to customize to your own n
 
 Ingrid loves cats :o)
 
--------------------------------------------
+___________________________________________
+
 
 So, The basic idea…
 
@@ -31,7 +32,8 @@ Each unit [u] within the container [u] needs the class:
 
   1) .unit
   
--------------------------------------------
+___________________________________________
+
 
 To tweak the layout we can combine units
 
@@ -48,7 +50,8 @@ as in the first example.
 
 The difference we add the class .span-2 on the last unit.
 
--------------------------------------------
+___________________________________________
+
 
 Units that need to span the whole width of the
 container use the class .field-unit [f].
@@ -64,7 +67,8 @@ container use the class .field-unit [f].
 ¦ +-------+ +-------+ +-------+ +-------+ ¦
 +-----------------------------------------+
 
--------------------------------------------
+___________________________________________
+
 
 Gutters
 
