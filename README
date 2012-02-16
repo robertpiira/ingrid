@@ -88,7 +88,9 @@ Mental model
 
 With Ingrid we are thinking in form of units as blocks of content/modules that can be stacked horizontally or vertically.
 
-A container with the class of .in-fifths would contain five units. There is really nothing that says how these units should be aligned or what widths they should have. I believe this model is works pretty neatly for reflowing content in a responsive layout.
+A container with the class of .in-fifths would contain five units. There is really nothing that says how these units should be aligned or what widths they should have. 
+
+I believe this model works pretty neatly for reflowing content in a responsive layout.
 
 ___________________________________________
 
