@@ -1,7 +1,7 @@
 Hello, I'm Ingrid!
 ==================
 
-Ingrid is a fluid CSS layout system, who's main goal is to reduce the use of classes on individual units.
+Ingrid is a fluid CSS layout system, whose main goal is to reduce the use of classes on individual units.
 
 Ingrid is a bit less obtrusive and bit more fun to reflow for responsive layouts.
 
