@@ -5,8 +5,6 @@ Ingrid is a fluid CSS layout system, whose main goal is to reduce the use of cla
 
 Ingrid is a bit less obtrusive and bit more fun to reflow for responsive layouts.
 
-Ingrid is heavily inspired by oocss grids <http://oocss.org>.
-
 Ingrid is also meant to be an extendable system, easy to customize to your own needs.
 
 Ingrid loves cats :o)
@@ -122,5 +120,18 @@ It's up to you to see what breakpoints make sense in your project and the way yo
 Compability
 -----------
 
-Ingrid works just fine with IE8 + and all modern browsers. IE6-7 might need some extra help for not supporting `border-box` model.
+Ingrid works just fine with IE8 + and all modern browsers. IE6-7 might need some extra help on your part for not supporting `border-box` model.
+
+
+Todo
+----
+
+* Create a proper demo-page
+* Work on the grid nomenclature
+
+
+License
+-------
+
+All code licensed under CC0: <http://creativecommons.org/publicdomain/zero/1.0/>
 
