@@ -117,7 +117,7 @@ ___________________________________________
 
 Responsive?
 
-Well, Ingrid is fluid, but there are no built in media querys. The Ingrid demo-page has a couple of breakpoints just do demonstrate how this could be done.
+Well, Ingrid is fluid, but there are no built in media query breakpoints. The Ingrid demo-page has a couple of breakpoints just do demonstrate how this could be done.
 
 It's up to you to see what breakpoints make sense in your project and the way you want to structure your css / markup. Whether you work with desktop down or mobile first approach, Ingrid should for both or a mix of these alternatives.
 
