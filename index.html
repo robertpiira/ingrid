@@ -25,10 +25,9 @@
   
   <div id="page">
     
-    <nav id="nav">
-      <ul>
-      </ul>
-    </nav>
+    <div class="github">
+      <p>See project on <a href="https://github.com/robertpiira/ingrid">Github</a></p>
+    </div>
   
     <header id="masthead" class="intro ingrid in-fourths">      
       <div class="unit">
@@ -37,23 +36,13 @@
           <h2>A fluid CSS layout system.</h2>
         </hgroup>
       </div>
-      <div class="unit span-3">
+      <div class="unit span-three">
         <img src="img/logo.jpg" alt="Ingrid" />
       </div>  
     </header>
     
-    <div class="intro ingrid in-fourths">
-      <aside class="unit">
-        <h2>Whatis?</h2>
-        <ul>
-          <li>It's fluid</li>
-          <li>It's lightweight</li>
-          <li>It's extendable</li>
-          <li>It's easy to implement</li>
-          <li>It lets you be creative!</li>
-        </ul>
-      </aside>
-      <div class="unit span-3">
+    <div class="ingrid in-thirds demo-introduction">
+      <div class="unit span-two">
         <h2>Hello, my name is Ingrid</h2>
         <p>
           Ingrid is a lightweight and fluid CSS layout system, whose main goal is to reduce the use of classes on individual units. 
@@ -63,6 +52,16 @@
           Ingrid is also meant to be an extendable system, easy to customize to your own needs.
         </p>
       </div>
+      <aside class="unit">
+        <h2>Ingrid who?</h2>
+        <ul>
+          <li>It's fluid</li>
+          <li>It's lightweight</li>
+          <li>It's extendable</li>
+          <li>It's easy to implement</li>
+          <li>It lets you be creative!</li>
+        </ul>
+      </aside>
     </div>
     
     <h2 class="section-title">Some examples</h2>
@@ -94,19 +93,19 @@
       </div>
     </div>
     
-    <div class="ingrid in-twos">
+    <div class="ingrid in-halves">
       <div class="unit">
-        <h2>unit one</h2>
         <figure>
           <img src="http://placekitten.com/g/490/200" alt="a kitten" />
         </figure>
+        <h2>unit one</h2>
         <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
       </div>
       <div class="unit">
-        <h2>unit two</h2>
         <figure>
           <img src="http://placekitten.com/g/490/200" alt="a kitten" />
         </figure>
+        <h2>unit two</h2>
         <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
       </div>
     </div>
@@ -114,33 +113,33 @@
     <ul class="news-articles ingrid in-thirds">
       <li class="unit">
         <figure>
-          <img src="http://placekitten.com/g/350/190" alt="a kitten" />
+          <img src="http://placekitten.com/g/450/190" alt="a kitten" />
         </figure>
         <h2>unit one</h2>
         <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
       </li>
       <li class="unit">
         <figure>
-          <img src="http://placekitten.com/g/350/190" alt="a kitten" />
+          <img src="http://placekitten.com/g/450/190" alt="a kitten" />
         </figure>
         <h2>unit two</h2>
         <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
       </li>
       <li class="unit">
         <figure>
-          <img src="http://placekitten.com/g/350/190" alt="a kitten" />
+          <img src="http://placekitten.com/g/450/190" alt="a kitten" />
         </figure>
         <h2>unit three</h2>
         <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
       </li>
     </ul>
     
-    <div class="ingrid in-twos">
+    <div class="ingrid in-thirds">
       <div class="field-unit">
         <h1 class="section-title">Nesting grids and units</h1>
       </div>
-      <div class="unit">
-        <div class="ingrid in-twos">
+      <div class="unit span-two">
+        <div class="ingrid in-halves">
           <div class="unit">
             <h2>unit one</h2>
             <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
@@ -150,10 +149,17 @@
             <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
           </div>
         </div>
-        <div class="ingrid">
-          <div class="field-unit">
+        <div class="ingrid in-thirds">
+          <div class="unit">
             <h2>field-unit one</h2>
             <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
+          </div>
+          <div class="unit">
+            <h2>field-unit one</h2>
+            <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
+          </div>
+          <div class="unit">
+            <h2>field-unit one</h2>
             <p>A document is a work of non-fiction writing intended to store and communicate information, thus acting as a recording.</p>
           </div>
         </div>

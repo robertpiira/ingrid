@@ -17,16 +17,16 @@ Introduction
 So, The basic idea…
 
     +-------------------[c]-------------------+
-    ¦ +-------+ +-------+ +-------+ +-------+ ¦
-    ¦ |       | |       | |       | |       | ¦
-    ¦ |  [u]  | |  [u]  | |  [u]  | |  [u]  | ¦
-    ¦ |       | |       | |       | |       | ¦
-    ¦ +-------+ +-------+ +-------+ +-------+ ¦
+    | +-------+ +-------+ +-------+ +-------+ |
+    | |       | |       | |       | |       | |
+    | |  [u]  | |  [u]  | |  [u]  | |  [u]  | |
+    | |       | |       | |       | |       | |
+    | +-------+ +-------+ +-------+ +-------+ |
     +-----------------------------------------+
 
 The container [c] needs two class-names:
 
-  1. `.ingrid`;
+  1. `.ingrid`
   2. `.in-fourths` (or `.in-thirds` if there are 3 units).
   
 Each unit [u] within the container [c] needs the class-name:
@@ -39,18 +39,18 @@ ___________________________________________
 To tweak the layout we can combine units like this.
 
     +-------------------[c]-------------------+
-    ¦ +-------+ +-------+ +-----------------+ ¦
-    ¦ |       | |       | |                 | ¦
-    ¦ |  [u]  | |  [u]  | |       [u]       | ¦
-    ¦ |       | |       | |                 | ¦
-    ¦ +-------+ +-------+ +-----------------+ ¦
+    | +-------+ +-------+ +-----------------+ |
+    | |       | |       | |                 | |
+    | |  [u]  | |  [u]  | |       [u]       | |
+    | |       | |       | |                 | |
+    | +-------+ +-------+ +-----------------+ |
     +-----------------------------------------+
 
 In this case the container [c] and units [u] have the same class-names as in the first example.
 
-The difference is that we add the class name `.span-2` on the last unit (making it span the width of two units).
+The difference is that we add the class name `.span-two` on the last unit (making it span the width of two units).
 
-The `.span-x` class-name can be used to combine units in any context (`.in-twos`, `.in-thirds`, `.in-fourths`, etc.).
+The `.span-x` class-name can be used to combine units in any context (`.in-halves`, `.in-thirds`, `.in-fourths`, etc.).
 
 ___________________________________________
 
@@ -58,14 +58,14 @@ ___________________________________________
 Units [f] that need to span the whole width of the container use the class _.field-unit_.
 
     +-------------------[c]-------------------+
-    ¦ +-------------------------------------+ ¦
-    ¦ |                 [f]                 | ¦
-    ¦ +-------------------------------------+ ¦
-    ¦ +-------+ +-------+ +-------+ +-------+ ¦
-    ¦ |       | |       | |       | |       | ¦
-    ¦ |  [u]  | |  [u]  | |  [u]  | |  [u]  | ¦
-    ¦ |       | |       | |       | |       | ¦
-    ¦ +-------+ +-------+ +-------+ +-------+ ¦
+    | +-------------------------------------+ |
+    | |                 [f]                 | |
+    | +-------------------------------------+ |
+    | +-------+ +-------+ +-------+ +-------+ |
+    | |       | |       | |       | |       | |
+    | |  [u]  | |  [u]  | |  [u]  | |  [u]  | |
+    | |       | |       | |       | |       | |
+    | +-------+ +-------+ +-------+ +-------+ |
     +-----------------------------------------+
 
 
@@ -120,7 +120,7 @@ It's up to you to see what breakpoints make sense in your project and the way yo
 Compability
 -----------
 
-Ingrid works just fine with IE8 + and all modern browsers. IE6-7 might need some extra help on your part for not supporting `border-box` model.
+Ingrid works just fine with IE8 + and all modern browsers. IE7 might need some extra help on your part for not supporting `border-box` model… IE6 is not supported at all.
 
 
 Todo
@@ -128,6 +128,7 @@ Todo
 
 * Create a proper demo-page
 * Work on the grid nomenclature
+* Proper browser testing
 
 
 License
