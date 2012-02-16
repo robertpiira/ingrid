@@ -84,16 +84,26 @@ The padding for the gutters work with em, % or pixel units (thanks to the CSS bo
 
 ___________________________________________
 
+Mental model
+
+With Ingrid we are thinking in form of units as blocks of content/modules that can be stacked horizontally or vertically.
+
+A container with the class of .in-fifths would contain five units. There is really nothing that says how these units should be aligned or what widths they should have. I believe this model is works pretty neatly for reflowing content in a responsive layout.
+
+___________________________________________
+
 
 Details
 
 Ingrid uses display: inline-block and border-box box model for laying out the individual units.
 
 Border-box makes it easy to set borders and padding (for gutters) directly on units. 
+- More on border-box http://paulirish.com/2012/box-sizing-border-box-ftw/
 
 Inline-block is just nice to work with and easy to reflow for different layouts.
 
 The one negative with inline-bock is the additional white-space that gets added between units. To remove the white-space evenly across different browsers can seem bit hacky. So Ingrid tries her best to get rid of the white-space. But the results are not cross-browser pixel-perfect. But really… Ingrid just doesn't care about pixel-perfection in that sense anymore.
+- More on inline-block http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/
 
 Some nicer details with Ingrid is that we don't need to repeat class-names like .first / .last / grid-6 / size1of5 etc. on each unit.
 
@@ -101,7 +111,13 @@ You could also skip the whole in-fourths / in-fifths class-names that Ingrid pro
 
 The container doesn't have to be called ".ingrid", change all these class-names to anything semantic or unsemantic you like!
 
-Don't forget that you can use negative margins and position relative positioning to changes the order of individual units. It's pretty easy to do with Ingrid.
+___________________________________________
+
+Responsive?
+
+Well, Ingrid is fluid, but there are no built in media querys. The Ingrid demo-page has a couple of breakpoints just do demonstrate how this could be done.
+
+It's up to you to see what breakpoints make sense in your project and the way you want to structure your css / markup. Whether you work with desktop down or mobile first approach, Ingrid should for both or a mix of these alternatives.
 
 ___________________________________________
 

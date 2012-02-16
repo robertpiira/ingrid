@@ -5,7 +5,7 @@ Author:   Robert Piirainen
 Home:     piira.se
 Twitter:  @robertpiira
 Created:  2011
-Updated:  2012/2/7
+Updated:  2012/2/16
    
 --------------------------------------------------------*/
 
@@ -28,7 +28,6 @@ Updated:  2012/2/7
 .unit,
 .field-unit {
   margin: 0;
-  padding: 0;
   display: inline-block;
   position: relative;
   letter-spacing: normal;
@@ -80,8 +79,8 @@ Updated:  2012/2/7
 
 
 
-/* UNITS (these are set on .in-grid container)
-   Divide units in...
+/* UNITS 
+   These divider classes are set on .ingrid container
 --------------------------------------------------------*/
 
 .in-twos      .unit   { width: 50%; } 
@@ -94,8 +93,8 @@ Updated:  2012/2/7
 
 
 
-/* SPATIALS (these are set on individual units)
-   Span units in...
+/* SPATIALS
+   The span-x classes are set on individual units
 --------------------------------------------------------*/
 
 /* Spatial units in thirds */
