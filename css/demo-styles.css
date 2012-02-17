@@ -185,7 +185,7 @@ h6 {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
   .demo-introduction {
     padding-left: 26%;
@@ -202,8 +202,8 @@ h6 {
 
 .gallery a {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: .4em;
+  margin-bottom: .4em;
 }
 
 .gallery img {
@@ -215,6 +215,16 @@ h6 {
 .gallery a:hover img,
 .gallery a:focus img {
   box-shadow: 0 0 0 4px rgba(0,0,0,1);
+}
+
+/* custom gallery gutters */
+
+.gallery {
+  margin: 0 -.4em;
+}
+
+.gallery .unit {
+  padding: 0 .4em;
 }
 
 

@@ -48,6 +48,7 @@ Updated:  2012/2/17
 .field-unit {
   padding: 0 1em; /* Can be set in em, % or px (must match .ingrid negative margins) */
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
