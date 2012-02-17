@@ -47,7 +47,7 @@ table {
 
 
 
-/* These are some messy DEMO styles. no need to poke around here all that much */
+/* These are some messy DEMO styles. No need to poke around here all that much */
 
 
 /* Base
@@ -162,12 +162,16 @@ h6 {
 
 #footer {
   margin-top: 2.2em;
+  padding-top: 1em;
   border-top: 1px dashed rgba(0,0,0,.2);
   clear: both;
+  text-align: center;
 }
 
 #masthead h1 {
   margin: .1em 0;
+  position: absolute;
+  left: -9999em;
 }
 
 #masthead h2 {
@@ -264,6 +268,7 @@ figure + .box {
   
   .intro .unit {
     width: auto;
+    display: block;
   }
   
 }

@@ -2,23 +2,22 @@
 /*--------------------------------------------------------
 
 Author:   Robert Piirainen
-Home:     piira.se
 Twitter:  @robertpiira
 Created:  2011
-Updated:  2012/2/16
+Updated:  2012/2/17
    
 --------------------------------------------------------*/
 
 
 
 
-/* INGRID COMPONENTS 
-   Here are the building blocks of Ingrid.
+/* INGRID
+   Here are the building blocks of Ingrid
 --------------------------------------------------------*/
 
 .ingrid {
   margin: 0 -1em; /* Can be set in em, % or px */
-  padding: 0;
+  padding: 0; /* Remove if you already reset paddings */
   clear: both;
   list-style: none; /* Works with ul & ol */
   letter-spacing: -0.31em;
@@ -27,9 +26,8 @@ Updated:  2012/2/16
 
 .unit,
 .field-unit {
-  margin: 0;
+  margin: 0; /* Remove if you already reset margins */
   display: inline-block;
-  position: relative; /* For left or right offsets  */
   letter-spacing: normal;
   word-spacing: normal;
   vertical-align: top;
@@ -43,7 +41,7 @@ Updated:  2012/2/16
 
 
 /* GUTTERS 
-   Gutter set directly on units (thanks border-box).
+   Gutter set directly on units (thanks border-box)
 --------------------------------------------------------*/
 
 .unit,
@@ -56,8 +54,8 @@ Updated:  2012/2/16
 
 
 
-/* oldIE 
-   Some IE7 help (a starter-kit for oldIE support)
+/* OLDIE 
+   Some IE7 patching (optional)
 --------------------------------------------------------*/
 
 .ingrid {
@@ -87,14 +85,14 @@ Updated:  2012/2/16
 .in-thirds    >   .unit   { width: 33.33333%; } 
 .in-fourths   >   .unit   { width: 25%; } 
 .in-fifths    >   .unit   { width: 20%; } 
-.in-sixths    >   .unit   { width: 16.6666666%; }
-.in-sevenths  >   .unit   { width: 14.2857143%; }
+.in-sixths    >   .unit   { width: 16.66666%; }
+.in-sevenths  >   .unit   { width: 14.28571%; }
 
 
 
 
 /* SPATIALS
-   The span-x classes are set on individual units
+   The span-x classes are set on individual .units
 --------------------------------------------------------*/
 
 /* Spatial units in thirds */
@@ -113,12 +111,12 @@ Updated:  2012/2/16
 .in-sixths    >   .span-two   { width: 33.33333%; }
 .in-sixths    >   .span-three { width: 50%; }
 .in-sixths    >   .span-four  { width: 66.66666%; }
-.in-sixths    >   .span-five  { width: 83.3333333%; }
+.in-sixths    >   .span-five  { width: 83.33333%; }
 
 /* Spatial units in sevenths */
-.in-sevenths  >   .span-two   { width: 28.5714286%; }
-.in-sevenths  >   .span-three { width: 42.8571429%; }
-.in-sevenths  >   .span-four  { width: 57.1428572%; }
-.in-sevenths  >   .span-five  { width: 71.4285715%; }
-.in-sevenths  >   .span-six   { width: 85.7142858%; }
+.in-sevenths  >   .span-two   { width: 28.57142%; }
+.in-sevenths  >   .span-three { width: 42.85714%; }
+.in-sevenths  >   .span-four  { width: 57.14285%; }
+.in-sevenths  >   .span-five  { width: 71.42857%; }
+.in-sevenths  >   .span-six   { width: 85.71428%; }
 
