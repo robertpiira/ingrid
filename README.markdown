@@ -100,7 +100,7 @@ Border-box makes it easy to set borders and padding (for gutters) directly on un
 
 `inline-block` is just nice to work with and easy to reflow for different layouts.
 
-The one negative with `inline-bock` is the additional white-space that gets added between units. To remove the white-space evenly across different browsers can seem bit hacky. So Ingrid tries her best to get rid of the white-space. But the results are not cross-browser pixel-perfect. But really… Ingrid just doesn't care about pixel-perfection in that sense anymore. (More on `display: inline-block` at <http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/>.)
+The one negative with `inline-block` is the additional white-space that gets added between units. To remove the white-space evenly across different browsers can seem bit hacky. So Ingrid tries her best to get rid of the white-space. But the results are not cross-browser pixel-perfect. But really… Ingrid just doesn't care about pixel-perfection in that sense anymore. (More on `display: inline-block` at <http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/>.)
 
 Some nicer details with Ingrid is that we don't need to repeat class names like `.first`, `.last`, `.grid-6`, `.size1of5`, etc. on each unit.
 
