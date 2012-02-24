@@ -210,6 +210,10 @@ h6 {
   display: block;
   box-shadow: 0 0 0 4px rgba(0,0,0,0);
   -webkit-transition: box-shadow .5s;
+  -moz-transition: box-shadow .5s;
+  -ms-transition: box-shadow .5s;
+  -o-transition: box-shadow .5s;
+  transition: box-shadow .5s;
 }
 
 .gallery a:hover img,
