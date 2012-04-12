@@ -3,73 +3,125 @@ INGRID SCSS
 Author:   Robert Piirainen
 Twitter:  @robertpiira
 --------------------------------------------------------*/
-.ingrid, .demo-items, .demo-blocks, .demo-modules, .demo-minis {
-  margin: 0 -1em;
+.ingrid-extend, .demo-items, .demo-blocks, .demo-modules, .demo-minis, .demo-parent, .demo-nested, .demo-responsive {
   padding: 0;
   clear: both;
-  list-style: none;
-  letter-spacing: -0.31em; }
+  list-style: none; }
 
-.ingrid--unit, .ingrid--field-unit, .demo-items--unit, .demo-blocks--unit, .demo-modules--unit, .demo-modules--custom-unit, .demo-minis--unit {
+.ingrid--unit-extend, .demo-items--unit, .demo-blocks--unit, .demo-modules--unit, .demo-modules--custom-unit, .demo-minis--unit, .demo-parent--unit, .demo-parent--custom-unit, .demo-nested--unit, .demo-responsive--unit {
   margin: 0;
-  padding: 0 1em;
-  display: inline-block;
   letter-spacing: normal;
   vertical-align: top;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.ingrid--field-unit {
-  display: block; }
-
 .demo-items {
-  margin-left: -2.2%;
-  margin-right: -2.2%; }
+  letter-spacing: -0.31em;
+  margin-left: -2%;
+  margin-right: -2%; }
   .demo-items .demo-items--unit {
-    padding-left: 2.2%;
-    padding-right: 2.2%; }
+    padding-left: 2%;
+    padding-right: 2%; }
 
 .demo-items--unit {
+  display: inline-block;
   width: 20%; }
 
 .demo-items--unit:first-of-type {
   width: 40%; }
 
+.demo-blocks {
+  letter-spacing: -0.31em;
+  margin-left: -2%;
+  margin-right: -2%; }
+  .demo-blocks .demo-blocks--unit {
+    padding-left: 2%;
+    padding-right: 2%; }
+
 .demo-blocks--unit {
+  display: inline-block;
   width: 16.667%; }
 
 .demo-modules {
-  margin-left: -1%;
-  margin-right: -1%; }
+  letter-spacing: -0.31em;
+  margin-left: -2%;
+  margin-right: -2%; }
   .demo-modules .demo-modules--unit {
-    padding-left: 1%;
-    padding-right: 1%; }
+    padding-left: 2%;
+    padding-right: 2%; }
 
 .demo-modules--unit {
+  display: inline-block;
   width: 33.333%; }
 
 .demo-modules--custom-unit {
+  display: inline-block;
   margin-right: 8%;
-  padding: 0 1%;
+  padding: 0 2%;
   width: 25.33333%; }
 
 .demo-minis {
-  margin-left: -3px;
-  margin-right: -3px; }
+  letter-spacing: -0.31em;
+  margin-left: -2%;
+  margin-right: -2%; }
   .demo-minis .demo-minis--unit {
-    padding-left: 3px;
-    padding-right: 3px; }
+    padding-left: 2%;
+    padding-right: 2%; }
 
 .demo-minis--unit {
+  display: inline-block;
   width: 12.5%; }
 
+.demo-parent {
+  letter-spacing: -0.31em;
+  margin-left: -2%;
+  margin-right: -2%; }
+  .demo-parent .demo-parent--unit, .demo-parent .demo-parent--custom-unit {
+    padding-left: 2%;
+    padding-right: 2%; }
+
+.demo-parent--unit, .demo-parent--custom-unit {
+  display: inline-block;
+  width: 33.333%; }
+
+.demo-parent--custom-unit {
+  width: 66.667%; }
+
+.demo-nested {
+  letter-spacing: -0.31em;
+  margin-left: -3%;
+  margin-right: -3%; }
+  .demo-nested .demo-nested--unit {
+    padding-left: 3%;
+    padding-right: 3%; }
+
+.demo-nested--unit {
+  display: inline-block;
+  width: 25%; }
+
+@media only screen and (min-width: 481px) {
+  .demo-responsive {
+    letter-spacing: -0.31em;
+    margin-left: -2%;
+    margin-right: -2%; }
+    .demo-responsive .demo-responsive--unit {
+      padding-left: 2%;
+      padding-right: 2%; }
+
+  .demo-responsive--unit {
+    display: inline-block;
+    width: 50%; } }
+@media only screen and (min-width: 769px) {
+  .demo-responsive--unit {
+    width: 25%; } }
 .demo-page {
   margin: 2em auto;
-  width: 96%; }
+  width: 93%; }
 
 .demo-box {
   margin: 10px 0;
   background: #ddd;
+  background: rgba(0, 0, 0, 0.3);
   height: 100px;
   border-radius: 4px; }

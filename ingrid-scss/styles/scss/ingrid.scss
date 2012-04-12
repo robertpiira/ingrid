@@ -6,60 +6,13 @@ Twitter:  @robertpiira
 --------------------------------------------------------*/
 
 
-
-// GUTTERS
+// VARIABLES
 //--------------------------------------------------------
 
 // Default gutter variables
 $zoom-gutter:     1em   !default;
-$flex-gutter:     2.2%  !default;
+$flex-gutter:     2%    !default;
 $static-gutter:   15px  !default;
-
-// CUSTOM GUTTERS
-//--------------------------------------------------------
-
-// Custom gutter width mixin for grid parent and unit selector
-@mixin has-custom-gutters($unit-selector, $gutter) {
-  margin-left: -#{$gutter};
-  margin-right: -#{$gutter};
-  #{$unit-selector} {
-    padding-left: $gutter;
-    padding-right: $gutter;
-  }
-}
-
-// INGRID
-//--------------------------------------------------------
-
-// The grid unit container
-.ingrid {
-  margin: 0 -#{$zoom-gutter};
-  padding: 0;
-  clear: both;
-  list-style: none;
-  letter-spacing: -0.31em;
-}
-
-// The grid unit
-.ingrid--unit {
-  margin: 0;
-  padding: 0 $zoom-gutter;
-  display: inline-block;
-  letter-spacing: normal;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-// Field units strech the whole width of a container
-.ingrid--field-unit {
-  @extend .ingrid--unit;
-  display: block;
-}
-
-// GRID WIDTHS
-//--------------------------------------------------------
 
 // Context variables
 $in-halves:   2;
@@ -78,8 +31,72 @@ $span-five:   5;
 $span-six:    6;
 $span-seven:  7;
 
-// Unit width mixin
-@mixin grid-unit-widths($context, $unit-span: 1) {
+// GUTTERS
+//--------------------------------------------------------
+
+@mixin has-gutters($unit-selector, $gutter: $flex-gutter, $context: false, $target: false) {
+  @if($context and $target) {
+    $new-context-gutter: ($context / $target) * $gutter;
+    margin-left: -#{$new-context-gutter};
+    margin-right: -#{$new-context-gutter};
+    #{$unit-selector} {
+      padding-left: $new-context-gutter;
+      padding-right: $new-context-gutter;
+    }
+  }
+  @else {
+    margin-left: -#{$gutter};
+    margin-right: -#{$gutter};
+    #{$unit-selector} {
+      padding-left: $gutter;
+      padding-right: $gutter;
+    }
+  }
+}
+
+// INGRID BASE
+//--------------------------------------------------------
+
+.ingrid-extend {
+  padding: 0;
+  clear: both;
+  list-style: none;
+}
+
+.ingrid--unit-extend {
+  margin: 0;
+  letter-spacing: normal;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// INGRID MIXIN
+//--------------------------------------------------------
+
+// The grid unit container
+@mixin ingrid {
+  letter-spacing: -0.31em;
+  @extend .ingrid-extend;
+}
+
+// The grid unit
+@mixin ingrid--unit {
+  display: inline-block;
+  @extend .ingrid--unit-extend;
+}
+
+// Field units strech the whole width of a container
+@mixin ingrid--field-unit {
+  display: block;
+  @extend .ingrid--unit-extend;
+}
+
+// GRID UNIT WIDTHS
+//--------------------------------------------------------
+
+@mixin has-columns($context, $unit-span: 1) {
   width:  percentage($unit-span / $context);
 }
 
