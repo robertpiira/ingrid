@@ -1,0 +1,75 @@
+/*--------------------------------------------------------
+INGRID SCSS
+Author:   Robert Piirainen
+Twitter:  @robertpiira
+--------------------------------------------------------*/
+.ingrid, .demo-items, .demo-blocks, .demo-modules, .demo-minis {
+  margin: 0 -1em;
+  padding: 0;
+  clear: both;
+  list-style: none;
+  letter-spacing: -0.31em; }
+
+.ingrid--unit, .ingrid--field-unit, .demo-items--unit, .demo-blocks--unit, .demo-modules--unit, .demo-modules--custom-unit, .demo-minis--unit {
+  margin: 0;
+  padding: 0 1em;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.ingrid--field-unit {
+  display: block; }
+
+.demo-items {
+  margin-left: -2.2%;
+  margin-right: -2.2%; }
+  .demo-items .demo-items--unit {
+    padding-left: 2.2%;
+    padding-right: 2.2%; }
+
+.demo-items--unit {
+  width: 20%; }
+
+.demo-items--unit:first-of-type {
+  width: 40%; }
+
+.demo-blocks--unit {
+  width: 16.667%; }
+
+.demo-modules {
+  margin-left: -1%;
+  margin-right: -1%; }
+  .demo-modules .demo-modules--unit {
+    padding-left: 1%;
+    padding-right: 1%; }
+
+.demo-modules--unit {
+  width: 33.333%; }
+
+.demo-modules--custom-unit {
+  margin-right: 8%;
+  padding: 0 1%;
+  width: 25.33333%; }
+
+.demo-minis {
+  margin-left: -3px;
+  margin-right: -3px; }
+  .demo-minis .demo-minis--unit {
+    padding-left: 3px;
+    padding-right: 3px; }
+
+.demo-minis--unit {
+  width: 12.5%; }
+
+.demo-page {
+  margin: 2em auto;
+  width: 96%; }
+
+.demo-box {
+  margin: 10px 0;
+  background: #ddd;
+  height: 100px;
+  border-radius: 4px; }
