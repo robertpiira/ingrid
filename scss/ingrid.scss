@@ -79,8 +79,8 @@ $span-six:    6;
 $span-seven:  7;
 
 // Unit width mixin
-@mixin grid-unit-widths($context, $target: 1) {
-  width:  percentage($target / $context);
+@mixin grid-unit-widths($context, $unit-span: 1) {
+  width:  percentage($unit-span / $context);
 }
 
 //end-----------------------------------------------------
