@@ -56,7 +56,7 @@
 
 .demo-minis {
   @include ingrid;
-  @include has-gutters('.demo-minis--unit');
+  @include has-gutters('.demo-minis--unit', .5%);
 }
 
 .demo-minis--unit {
