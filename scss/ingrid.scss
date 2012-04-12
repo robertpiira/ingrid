@@ -1,0 +1,86 @@
+
+/*--------------------------------------------------------
+INGRID SCSS
+Author:   Robert Piirainen
+Twitter:  @robertpiira
+--------------------------------------------------------*/
+
+
+
+// GUTTERS
+//--------------------------------------------------------
+
+// Default gutter variables
+$zoom-gutter:     1em   !default;
+$flex-gutter:     2.2%  !default;
+$static-gutter:   15px  !default;
+
+// CUSTOM GUTTERS
+//--------------------------------------------------------
+
+// Custom gutter width mixin for grid parent and unit selector
+@mixin has-custom-gutters($unit-selector, $gutter) {
+  margin-left: -#{$gutter};
+  margin-right: -#{$gutter};
+  #{$unit-selector} {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+}
+
+// INGRID
+//--------------------------------------------------------
+
+// The grid unit container
+.ingrid {
+  margin: 0 -#{$zoom-gutter};
+  padding: 0;
+  clear: both;
+  list-style: none;
+  letter-spacing: -0.31em;
+}
+
+// The grid unit
+.ingrid--unit {
+  margin: 0;
+  padding: 0 $zoom-gutter;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Field units strech the whole width of a container
+.ingrid--field-unit {
+  @extend .ingrid--unit;
+  display: block;
+}
+
+// GRID WIDTHS
+//--------------------------------------------------------
+
+// Context variables
+$in-halves:   2;
+$in-thirds:   3;
+$in-fourths:  4;
+$in-fifths:   5;
+$in-sixths:   6;
+$in-sevenths: 7;
+$in-eights:   8;
+
+// Spatial unit variables
+$span-two:    2;
+$span-three:  3;
+$span-four:   4;
+$span-five:   5;
+$span-six:    6;
+$span-seven:  7;
+
+// Unit width mixing
+@mixin grid-unit-widths($context, $target: 1) {
+  width:  percentage($target / $context);
+}
+
+//end-----------------------------------------------------
