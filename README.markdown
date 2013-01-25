@@ -1,4 +1,4 @@
-Hello, I'm Ingrid!
+Hello, I'm Ingrid 2.0!
 ==================
 
 Ingrid is a fluid CSS layout system, whose main goal is to reduce the use of classes on individual units.
@@ -9,7 +9,7 @@ Ingrid is also meant to be an extendable system, easy to customize to your own n
 
 Ingrid loves cats :o)
 
-Check out a quick and dirty demo-page at <http://piira.se/projects/ingrid>.
+Check out Ingrid in use at <http://codepen.io/robertpiira/pen/kofpu>.
 
 Introduction
 ------------
@@ -26,8 +26,8 @@ So, The basic idea…
 
 The container [c] needs two class-names:
 
-  1. `.ingrid`
-  2. `.in-fourths` (or `.in-thirds` if there are 3 units).
+  1. `.container`
+  2. `.divide4` (or `.divide3` if there are 3 units).
   
 Each unit [u] within the container [c] needs the class-name:
 
@@ -48,9 +48,9 @@ To tweak the layout we can combine units like this.
 
 In this case the container [c] and units [u] have the same class-names as in the first example.
 
-The difference is that we add the class name `.span-two` on the last unit (making it span the width of two units).
+The difference is that we add the class name `.span2` on the last unit (making it span the width of two units).
 
-The `.span-x` class-name can be used to combine units in any context (`.in-halves`, `.in-thirds`, `.in-fourths`, etc.).
+The `.span-x` class-name can be used to combine units in any context (`.divide2`, `.divide3`, `.divide4`, etc.).
 
 ___________________________________________
 
@@ -86,7 +86,7 @@ Mental model
 
 With Ingrid we are thinking in form of units as blocks of content/modules that can be stacked horizontally or vertically.
 
-A container with the class of `.in-fifths` would contain five units. There is really nothing that says how these units should be aligned or what widths they should have. 
+A container with the class of `.divide5` would contain five units. There is really nothing that says how these units should be aligned or what widths they should have. 
 
 I believe this model works pretty neatly for reflowing content in a responsive layout.
 
@@ -104,31 +104,23 @@ The one negative with `inline-block` is the additional white-space that gets add
 
 Some nicer details with Ingrid is that we don't need to repeat class names like `.first`, `.last`, `.grid-6`, `.size1of5`, etc. on each unit.
 
-You could also skip the whole `.in-fourths` / `in-fifths` class names that Ingrid provides and make your own semantic class names for width hooks instead.
+You could also skip the whole `.divde4` / `span2` class names that Ingrid provides and make your own semantic class names for width hooks instead.
 
-The container doesn't have to be called `.ingrid`, change all these class-names to anything semantic or unsemantic you like!
+The container doesn't have to be called `.container`, change all these class-names to anything semantic or unsemantic you like!
 
 
 Responsive?
 -----------
 
-Well, Ingrid is fluid, but there are no built in media query breakpoints. The Ingrid demo-page has a couple of breakpoints just do demonstrate how this could be done.
+Ingrid 2.0 includes two breakpoints and the css is structured in a mobile first approach.
 
-It's up to you to see what breakpoints make sense in your project and the way you want to structure your CSS / markup. Whether you work with desktop down or mobile first approach, Ingrid should work for both or a mix of these alternatives.
+It's up to you to see what breakpoints make sense in your project. The breakpoints that are included with Ingrid can be modified so that they match your content.
 
 
 Compability
 -----------
 
 Ingrid works just fine with IE8 + and all modern browsers. IE7 might need some extra help on your part for not supporting `border-box` model… IE6 is not supported at all.
-
-
-Todo
-----
-
-* Create a proper demo-page
-* Work on the grid nomenclature
-* Proper browser testing
 
 
 License
