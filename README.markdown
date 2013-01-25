@@ -115,8 +115,8 @@ Ingrid 2.0 includes two breakpoints and the css is structured in a mobile first 
 It's up to you to see what breakpoints make sense in your project. The breakpoints that are included with Ingrid can be modified so that they match your content.
 
 
-Compability
------------
+Browser support
+---------------
 
 Ingrid works just fine with IE8 + and all modern browsers. IE7 might need some extra help on your part for not supporting `border-box` model… IE6 is not supported at all.
 
