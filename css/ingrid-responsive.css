@@ -1,0 +1,281 @@
+
+/* Ingrid CSS with Media Queries */
+
+/*-----------------------------------------
+ *
+ * Author:   Robert Piirainen
+ * Twitter:  @robertpiira
+ * Github:   https://github.com/robertpiira/ingrid
+ * 
+ *---------------------------------------*/
+
+/*-----------------------------------------
+ *
+ * Mobile first approach for class names
+ *
+ * .s_* class prefix is for "small and up"
+ * .m_* class prefix is for "medium and up"
+ * 
+ *---------------------------------------*/
+
+
+
+
+/* INGRID - All
+-----------------------------------------*/
+
+.container {
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+}
+
+.container,
+.s_container,
+.m_container {
+  padding: 0;
+  list-style: none;
+}
+
+.container > .unit,
+.s_container > .unit,
+.m_container > .unit,
+.field-unit {
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+.container > .unit {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.field-unit  {
+  display: block;
+}
+
+
+
+
+/* GUTTERS - All
+-----------------------------------------*/
+
+.container {
+  margin: 0 -1rem;
+}
+
+.container > .unit,
+.container > .field-unit {
+  padding: 0 1rem;
+}
+
+
+
+
+/* UNITS - All
+-----------------------------------------*/
+
+.divide2  >  .unit  { width: 50%; } 
+.divide3  >  .unit  { width: 33.33333%; }
+.divide4  >  .unit  { width: 25%; } 
+.divide5  >  .unit  { width: 20%; } 
+.divide6  >  .unit  { width: 16.66666%; }
+.divide7  >  .unit  { width: 14.28571%; }
+
+
+
+
+/* SPATIALS - All
+-----------------------------------------*/
+
+/* Spatial units in thirds */
+.divide3  >  .span2  { width: 66.66666%; }
+
+/* Spatial units in fourths */
+.divide4  >  .span2  { width: 50%; }
+.divide4  >  .span3  { width: 75%; }
+
+/* Spatial units in fifths */
+.divide5  >  .span2  { width: 40%; }
+.divide5  >  .span3  { width: 60%; }
+.divide5  >  .span4  { width: 80%; }
+
+/* Spatial units in sixths */
+.divide6  >  .span2  { width: 33.33333%; }
+.divide6  >  .span3  { width: 50%; }
+.divide6  >  .span4  { width: 66.66666%; }
+.divide6  >  .span5  { width: 83.33333%; }
+
+/* Spatial units in sevenths */
+.divide7  >  .span2  { width: 28.57142%; }
+.divide7  >  .span3  { width: 42.85714%; }
+.divide7  >  .span4  { width: 57.14285%; }
+.divide7  >  .span5  { width: 71.42857%; }
+.divide7  >  .span6  { width: 85.71428%; }
+
+
+
+
+/* INGRID - Media Queries, small and up
+-----------------------------------------*/
+
+@media only screen and (min-width: 480px) {
+  
+  /* INGRID - Small and up
+  ---------------------------------------*/
+  
+  .s_container {
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+  }
+  
+  .s_container > .unit {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+
+
+  /* GUTTERS - Small and up
+  ---------------------------------------*/
+
+  .s_container {
+    margin: 0 -1rem;
+  }
+
+  .s_container > .unit,
+  .s_container > .field-unit {
+    padding: 0 1rem;
+  }
+  
+
+
+
+  /* UNITS - Small and up
+  ---------------------------------------*/
+
+  .s_divide2  >  .unit  { width: 50%; } 
+  .s_divide3  >  .unit  { width: 33.33333%; }
+  .s_divide4  >  .unit  { width: 25%; } 
+  .s_divide5  >  .unit  { width: 20%; } 
+  .s_divide6  >  .unit  { width: 16.66666%; }
+  .s_divide7  >  .unit  { width: 14.28571%; }
+  
+
+
+
+  /* SPATIALS - Small and up
+  ---------------------------------------*/
+
+  /* Spatial units in thirds */
+  .s_divide3  >  .s_span2  { width: 66.66666%; }
+
+  /* Spatial units in fourths */
+  .s_divide4  >  .s_span2  { width: 50%; }
+  .s_divide4  >  .s_span3  { width: 75%; }
+
+  /* Spatial units in fifths */
+  .s_divide5  >  .s_span2  { width: 40%; }
+  .s_divide5  >  .s_span3  { width: 60%; }
+  .s_divide5  >  .s_span4  { width: 80%; }
+
+  /* Spatial units in sixths */
+  .s_divide6  >  .s_span2  { width: 33.33333%; }
+  .s_divide6  >  .s_span3  { width: 50%; }
+  .s_divide6  >  .s_span4  { width: 66.66666%; }
+  .s_divide6  >  .s_span5  { width: 83.33333%; }
+
+  /* Spatial units in sevenths */
+  .s_divide7  >  .s_span2  { width: 28.57142%; }
+  .s_divide7  >  .s_span3  { width: 42.85714%; }
+  .s_divide7  >  .s_span4  { width: 57.14285%; }
+  .s_divide7  >  .s_span5  { width: 71.42857%; }
+  .s_divide7  >  .s_span6  { width: 85.71428%; }
+  
+}
+
+
+
+
+/* INGRID - Media Queries, medium and up
+-----------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  
+  /* INGRID - Medium and up
+  ---------------------------------------*/
+  
+  .m_container {
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+  }
+  
+  .m_container > .unit {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+
+
+
+  /* GUTTERS - Medium and up
+  ---------------------------------------*/
+  
+  .m_container {
+    margin: 0 -1rem;
+  }
+  
+  .m_container > .unit,
+  .m_container > .field-unit {
+    padding: 0 1rem;
+  }
+
+
+
+
+  /* UNITS - Medium and up
+  ---------------------------------------*/
+  
+  .m_divide2  >  .unit  { width: 50%; } 
+  .m_divide3  >  .unit  { width: 33.33333%; }
+  .m_divide4  >  .unit  { width: 25%; } 
+  .m_divide5  >  .unit  { width: 20%; } 
+  .m_divide6  >  .unit  { width: 16.66666%; }
+  .m_divide7  >  .unit  { width: 14.28571%; }
+
+
+
+
+  /* SPATIALS - Medium and up
+  ---------------------------------------*/
+
+  /* Spatial units in thirds */
+  .m_divide3  >  .m_span2  { width: 66.66666%; }
+
+  /* Spatial units in fourths */
+  .m_divide4  >  .m_span2  { width: 50%; }
+  .m_divide4  >  .m_span3  { width: 75%; }
+
+  /* Spatial units in fifths */
+  .m_divide5  >  .m_span2  { width: 40%; }
+  .m_divide5  >  .m_span3  { width: 60%; }
+  .m_divide5  >  .m_span4  { width: 80%; }
+
+  /* Spatial units in sixths */
+  .m_divide6  >  .m_span2  { width: 33.33333%; }
+  .m_divide6  >  .m_span3  { width: 50%; }
+  .m_divide6  >  .m_span4  { width: 66.66666%; }
+  .m_divide6  >  .m_span5  { width: 83.33333%; }
+
+  /* Spatial units in sevenths */
+  .m_divide7  >  .m_span2  { width: 28.57142%; }
+  .m_divide7  >  .m_span3  { width: 42.85714%; }
+  .m_divide7  >  .m_span4  { width: 57.14285%; }
+  .m_divide7  >  .m_span5  { width: 71.42857%; }
+  .m_divide7  >  .m_span6  { width: 85.71428%; }
+
+}
