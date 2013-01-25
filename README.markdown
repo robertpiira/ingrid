@@ -7,8 +7,6 @@ Ingrid is a bit less obtrusive and bit more fun to reflow for responsive layouts
 
 Ingrid is also meant to be an extendable system, easy to customize to your own needs.
 
-Ingrid loves cats :o)
-
 Check out Ingrid in use at <http://codepen.io/robertpiira/pen/kofpu>.
 
 Introduction
