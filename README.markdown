@@ -29,12 +29,12 @@ So, The basic idea…
 
 The container [c] needs two class-names:
 
-  1. `.container`
-  2. `.divide4` (or `.divide3` if there are 3 units).
+  1. `.grid`
+  2. `.grid--divide-4` (or `.grid--divide-3` if there are 3 units).
   
 Each unit [u] within the container [c] needs the class-name:
 
-  1. `.unit`
+  1. `.grid_unit`
   
 ___________________________________________
 
@@ -51,14 +51,14 @@ To tweak the layout we can combine units like this.
 
 In this case the container [c] and units [u] have the same class-names as in the first example.
 
-The difference is that we add the class name `.span2` on the last unit (making it span the width of two units).
+The difference is that we add the class name `.grid_unit--span-2` on the last unit (making it span the width of two units).
 
-The `.span-x` class-name can be used to combine units in any context (`.divide2`, `.divide3`, `.divide4`, etc.).
+The `.grid_unit--span-x` class-name can be used to combine units in any context (`.grid--divide-2`, `.grid--divide-3`, `.grid--divide-4`, etc.).
 
 ___________________________________________
 
 
-Units [f] that need to span the whole width of the container use the class `.field-unit`
+Units [f] that need to span the whole width of the container use the class `.grid_field-unit`
 
     +-------------------[c]-------------------+
     | +-------------------------------------+ |
@@ -74,7 +74,7 @@ Units [f] that need to span the whole width of the container use the class `.fie
 ___________________________________________
 
 
-Ingrid includes classes that only respond to certain Media Query breakpoints. In this example container [c] is using the classes `.m_container` and `.m_divide2`.
+Ingrid includes classes that only respond to certain Media Query breakpoints. In this example container [c] is using the classes `.m-grid` and `.m-grid--divide-2`.
 
 This is how the layout would look like on a narrow screen. 
 
@@ -87,7 +87,7 @@ This is how the layout would look like on a narrow screen.
     | +-------------------------------------+ |
     +-----------------------------------------+
 
-…and once the breakpoint for `.m_*` prefixed class names kicks in  for above narrow screens — the layout will reflow into two horizontally stacked columns.
+…and once the breakpoint for `.m-*` prefixed class names kicks in  for above narrow screens — the layout will reflow into two horizontally stacked columns.
 
     +-------------------[c]-------------------+
     | +-----------------+ +-----------------+ |
@@ -97,9 +97,9 @@ This is how the layout would look like on a narrow screen.
     | +-----------------+ +-----------------+ |
     +-----------------------------------------+
 
-`.m_*` prefixed classes are triggered for above small-sized viewports. "m_" is short for medium.
+`.m-*` prefixed classes are triggered for above small-sized viewports. "m-" is short for medium.
 
-`.l_*` prefixed classes are triggered for above medium-sized viewports. "l_" is short for large.
+`.l-*` prefixed classes are triggered for above medium-sized viewports. "l-" is short for large.
 
 Nesting grids
 -------------
@@ -128,7 +128,7 @@ Border-box makes it easy to set borders and padding (for gutters) directly on un
 
 The one negative with `inline-block` is the additional white-space that gets added between units. To remove the white-space evenly across different browsers can seem bit hacky. So Ingrid tries her best to get rid of the white-space. But the results are not cross-browser pixel-perfect. But really… Ingrid just doesn't care about pixel-perfection in that sense anymore. (More on `display: inline-block` at <http://robertnyman.com/2010/02/24/css-display-inline-block-why-it-rocks-and-why-it-sucks/>.)
 
-If you'd like to try bits of Ingrid in production code, you could skip the whole `.divide4` / `.span2` class names that Ingrid provides and make your own semantic class names for width hooks instead.
+If you'd like to try bits of Ingrid in production code, you could skip the whole `.grid--divide-4` / `.grid_unit--span-2` class names that Ingrid provides and make your own semantic class names for width hooks instead.
 
 Responsive?
 -----------
