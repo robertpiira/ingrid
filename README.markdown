@@ -3,7 +3,7 @@ Hello, I'm Ingrid 2.0!
 
 The new Ingrid 2.0 is here. This time around Ingrid's main focus is on prototyping and wireframing page layouts.
 
-Ingrid version 2.0 includes
+## Ingrid version 2.0 includes
 1. Media queries for responsive layout support
 2. More generic and simplified classname naming conventions, and…
 3. a bunch more column width variations.
