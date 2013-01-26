@@ -85,7 +85,7 @@ This is how the layout would look like on a narrow screen.
     | +-------------------------------------+ |
     +-----------------------------------------+
 
-…and once the breakpoint for `.m_*` prefixed classnames kicks in  for above narrow screens — the layout will reflow into two horizontally stacked columns.
+…and once the breakpoint for `.m_*` prefixed classnames kick in  for above narrow screens — the layout will reflow into two horizontally stacked columns.
 
     +-------------------[c]-------------------+
     | +-----------------+ +-----------------+ |
