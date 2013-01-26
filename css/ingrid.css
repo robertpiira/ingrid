@@ -14,8 +14,8 @@
  *
  * Mobile first approach for class names
  *
- * .s_* class prefix is for "small and up"
- * .m_* class prefix is for "medium and up"
+ * .l_* class prefix is for "small and up"
+ * .l_* class prefix is for "medium and up"
  * 
  *---------------------------------------*/
 
@@ -31,15 +31,15 @@
 }
 
 .container,
-.s_container,
-.m_container {
+.m_container,
+.l_container {
   padding: 0;
   list-style: none;
 }
 
 .container > .unit,
-.s_container > .unit,
 .m_container > .unit,
+.l_container > .unit,
 .field-unit {
   margin: 0;
   -moz-box-sizing: border-box;
@@ -85,6 +85,7 @@
 .divide5  >  .unit  { width: 20%; } 
 .divide6  >  .unit  { width: 16.66666%; }
 .divide7  >  .unit  { width: 14.28571%; }
+.divide8  >  .unit  { width: 12.5%; }
 
 
 
@@ -117,98 +118,22 @@
 .divide7  >  .span5  { width: 71.42857%; }
 .divide7  >  .span6  { width: 85.71428%; }
 
+/* Spatial units in eights */
+.divide8  >  .span2  { width: 25%; }
+.divide8  >  .span3  { width: 37.5%; }
+.divide8  >  .span4  { width: 50%; }
+.divide8  >  .span5  { width: 62.5%; }
+.divide8  >  .span6  { width: 75%; }
+.divide8  >  .span7  { width: 87.5%; }
 
 
 
-/* INGRID - Media Queries, small and up
+
+/* INGRID - Breakpoint
+ * Above small-sized viewports
 -----------------------------------------*/
 
 @media only screen and (min-width: 480px) {
-  
-  /* INGRID - Small and up
-  ---------------------------------------*/
-  
-  .s_container {
-    letter-spacing: -0.31em;
-    word-spacing: -0.43em;
-  }
-  
-  .s_container > .unit {
-    display: inline-block;
-    vertical-align: top;
-  }
-
-
-
-
-  /* GUTTERS - Small and up
-  ---------------------------------------*/
-
-  .s_container {
-    margin: 0 -1rem;
-  }
-
-  .s_container > .unit,
-  .s_container > .field-unit {
-    padding: 0 1rem;
-  }
-  
-
-
-
-  /* UNITS - Small and up
-  ---------------------------------------*/
-
-  .s_divide2  >  .unit  { width: 50%; } 
-  .s_divide3  >  .unit  { width: 33.33333%; }
-  .s_divide4  >  .unit  { width: 25%; } 
-  .s_divide5  >  .unit  { width: 20%; } 
-  .s_divide6  >  .unit  { width: 16.66666%; }
-  .s_divide7  >  .unit  { width: 14.28571%; }
-  
-
-
-
-  /* SPATIALS - Small and up
-  ---------------------------------------*/
-
-  /* Spatial units in thirds */
-  .s_divide3  >  .s_span2  { width: 66.66666%; }
-
-  /* Spatial units in fourths */
-  .s_divide4  >  .s_span2  { width: 50%; }
-  .s_divide4  >  .s_span3  { width: 75%; }
-
-  /* Spatial units in fifths */
-  .s_divide5  >  .s_span2  { width: 40%; }
-  .s_divide5  >  .s_span3  { width: 60%; }
-  .s_divide5  >  .s_span4  { width: 80%; }
-
-  /* Spatial units in sixths */
-  .s_divide6  >  .s_span2  { width: 33.33333%; }
-  .s_divide6  >  .s_span3  { width: 50%; }
-  .s_divide6  >  .s_span4  { width: 66.66666%; }
-  .s_divide6  >  .s_span5  { width: 83.33333%; }
-
-  /* Spatial units in sevenths */
-  .s_divide7  >  .s_span2  { width: 28.57142%; }
-  .s_divide7  >  .s_span3  { width: 42.85714%; }
-  .s_divide7  >  .s_span4  { width: 57.14285%; }
-  .s_divide7  >  .s_span5  { width: 71.42857%; }
-  .s_divide7  >  .s_span6  { width: 85.71428%; }
-  
-}
-
-
-
-
-/* INGRID - Media Queries, medium and up
------------------------------------------*/
-
-@media only screen and (min-width: 768px) {
-  
-  /* INGRID - Medium and up
-  ---------------------------------------*/
   
   .m_container {
     letter-spacing: -0.31em;
@@ -219,39 +144,39 @@
     display: inline-block;
     vertical-align: top;
   }
-  
 
 
 
-  /* GUTTERS - Medium and up
+
+  /* GUTTERS - Small and up
   ---------------------------------------*/
-  
+
   .m_container {
     margin: 0 -1rem;
   }
-  
+
   .m_container > .unit,
   .m_container > .field-unit {
     padding: 0 1rem;
   }
-
-
-
-
-  /* UNITS - Medium and up
-  ---------------------------------------*/
   
+
+
+
+  /* UNITS - Small and up
+  ---------------------------------------*/
+
   .m_divide2  >  .unit  { width: 50%; } 
   .m_divide3  >  .unit  { width: 33.33333%; }
   .m_divide4  >  .unit  { width: 25%; } 
   .m_divide5  >  .unit  { width: 20%; } 
   .m_divide6  >  .unit  { width: 16.66666%; }
   .m_divide7  >  .unit  { width: 14.28571%; }
+  .m_divide8  >  .unit  { width: 12.5%; }
 
 
 
-
-  /* SPATIALS - Medium and up
+  /* SPATIALS - Small and up
   ---------------------------------------*/
 
   /* Spatial units in thirds */
@@ -278,5 +203,103 @@
   .m_divide7  >  .m_span4  { width: 57.14285%; }
   .m_divide7  >  .m_span5  { width: 71.42857%; }
   .m_divide7  >  .m_span6  { width: 85.71428%; }
+
+  /* Spatial units in eights */
+  .m_divide8  >  .m_span2  { width: 25%; }
+  .m_divide8  >  .m_span3  { width: 37.5%; }
+  .m_divide8  >  .m_span4  { width: 50%; }
+  .m_divide8  >  .m_span5  { width: 62.5%; }
+  .m_divide8  >  .m_span6  { width: 75%; }
+  .m_divide8  >  .m_span7  { width: 87.5%; }
+  
+}
+
+
+
+
+/* INGRID - Breakpoint
+ * Above medium-sized viewports
+-----------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  
+  .l_container {
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+  }
+  
+  .l_container > .unit {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+
+
+
+  /* GUTTERS - Medium and up
+  ---------------------------------------*/
+  
+  .l_container {
+    margin: 0 -1rem;
+  }
+  
+  .l_container > .unit,
+  .l_container > .field-unit {
+    padding: 0 1rem;
+  }
+
+
+
+
+  /* UNITS - Medium and up
+  ---------------------------------------*/
+  
+  .l_divide2  >  .unit  { width: 50%; } 
+  .l_divide3  >  .unit  { width: 33.33333%; }
+  .l_divide4  >  .unit  { width: 25%; } 
+  .l_divide5  >  .unit  { width: 20%; } 
+  .l_divide6  >  .unit  { width: 16.66666%; }
+  .l_divide7  >  .unit  { width: 14.28571%; }
+  .l_divide8  >  .unit  { width: 12.5%; }
+  .l_divide9  >  .unit  { width: 11.11111%; }
+  .l_divide10 >  .unit  { width: 10%; }
+
+
+
+  /* SPATIALS - Medium and up
+  ---------------------------------------*/
+
+  /* Spatial units in thirds */
+  .l_divide3  >  .l_span2  { width: 66.66666%; }
+
+  /* Spatial units in fourths */
+  .l_divide4  >  .l_span2  { width: 50%; }
+  .l_divide4  >  .l_span3  { width: 75%; }
+
+  /* Spatial units in fifths */
+  .l_divide5  >  .l_span2  { width: 40%; }
+  .l_divide5  >  .l_span3  { width: 60%; }
+  .l_divide5  >  .l_span4  { width: 80%; }
+
+  /* Spatial units in sixths */
+  .l_divide6  >  .l_span2  { width: 33.33333%; }
+  .l_divide6  >  .l_span3  { width: 50%; }
+  .l_divide6  >  .l_span4  { width: 66.66666%; }
+  .l_divide6  >  .l_span5  { width: 83.33333%; }
+
+  /* Spatial units in sevenths */
+  .l_divide7  >  .l_span2  { width: 28.57142%; }
+  .l_divide7  >  .l_span3  { width: 42.85714%; }
+  .l_divide7  >  .l_span4  { width: 57.14285%; }
+  .l_divide7  >  .l_span5  { width: 71.42857%; }
+  .l_divide7  >  .l_span6  { width: 85.71428%; }
+
+  /* Spatial units in eights */
+  .l_divide8  >  .l_span2  { width: 25%; }
+  .l_divide8  >  .l_span3  { width: 37.5%; }
+  .l_divide8  >  .l_span4  { width: 50%; }
+  .l_divide8  >  .l_span5  { width: 62.5%; }
+  .l_divide8  >  .l_span6  { width: 75%; }
+  .l_divide8  >  .l_span7  { width: 87.5%; }
 
 }
