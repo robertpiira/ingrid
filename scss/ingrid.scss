@@ -1,0 +1,176 @@
+
+/* Ingrid 2.0 (SCSS) */
+
+/*-----------------------------------------
+ *
+ * Author:   Robert Piirainen
+ * Twitter:  @robertpiira
+ * Github:   https://github.com/robertpiira/ingrid
+ * 
+ *---------------------------------------*/
+
+
+// Settings
+//-----------------------------------------
+
+// 1. $breakpoints variable takes a list of arguments, every argument needs two parameters (class-name-prefix, min-width-breakpoint).
+// 2. $breakpoints variable should be set to false if you don't need media queries for your layout.
+// 3. $gutters variable can be set to any unit, example: '20px', or '2%' etc. Don't forget that relative units in $gutters argument will be affected when nesting grids.
+
+$breakpoints: (tablet, 45em), (desktop, 65em);
+$gutters: 2rem;
+ 
+
+// Styles
+//-----------------------------------------
+
+@mixin styles($prefix: false) {
+  
+  $pre: '' !default;
+  
+  @if ($prefix) {
+    
+    $pre: #{$prefix}#{'-'};
+      
+  }
+  
+  
+  /* INGRID - Parts */
+
+  .#{$pre}grid {
+    padding: 0;
+    list-style: none;
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+  }
+
+  @if ($prefix == false) {
+    
+    .grid_unit,
+    .grid_field-unit {
+      margin: 0;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    
+    .grid_field-unit  {
+      display: block;
+    }
+    
+  }
+
+  .#{$pre}grid > .grid_unit {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+  /* INGRID - Gutters */
+
+  .#{$pre}grid {
+    margin: 0 -#{$gutters / 2};
+  }
+
+  .#{$pre}grid > .grid_unit,
+  .#{$pre}grid > .grid_field-unit {
+    padding: 0 #{$gutters / 2};
+  }
+
+
+  /* INGRID - Divided units */
+
+  .#{$pre}grid--divide-2  >  .grid_unit  { width: calculate-width(1,2); } 
+  .#{$pre}grid--divide-3  >  .grid_unit  { width: calculate-width(1,3); }
+  .#{$pre}grid--divide-4  >  .grid_unit  { width: calculate-width(1,4); } 
+  .#{$pre}grid--divide-5  >  .grid_unit  { width: calculate-width(1,5); } 
+  .#{$pre}grid--divide-6  >  .grid_unit  { width: calculate-width(1,6); }
+  .#{$pre}grid--divide-7  >  .grid_unit  { width: calculate-width(1,7); }
+  .#{$pre}grid--divide-8  >  .grid_unit  { width: calculate-width(1,8); }
+
+
+  /* INGRID - Spatial units */
+
+  // Spatial units in thirds
+    
+  .#{$pre}grid--divide-3  >  .#{$pre}grid_unit--span-2  { width: calculate-width(2,3); }
+
+  // Spatial units in fourths
+    
+  .#{$pre}grid--divide-4  >  .#{$pre}grid_unit--span-2  { width: calculate-width(2,4); }
+  .#{$pre}grid--divide-4  >  .#{$pre}grid_unit--span-3  { width: calculate-width(3,4); }
+
+  // Spatial units in fifths
+    
+  .#{$pre}grid--divide-5  >  .#{$pre}grid_unit--span-2  { width: calculate-width(2,5); }
+  .#{$pre}grid--divide-5  >  .#{$pre}grid_unit--span-3  { width: calculate-width(3,5); }
+  .#{$pre}grid--divide-5  >  .#{$pre}grid_unit--span-4  { width: calculate-width(4,5); }
+
+  // Spatial units in sixths
+    
+  .#{$pre}grid--divide-6  >  .#{$pre}grid_unit--span-2  { width: calculate-width(2,6); }
+  .#{$pre}grid--divide-6  >  .#{$pre}grid_unit--span-3  { width: calculate-width(3,6); }
+  .#{$pre}grid--divide-6  >  .#{$pre}grid_unit--span-4  { width: calculate-width(4,6); }
+  .#{$pre}grid--divide-6  >  .#{$pre}grid_unit--span-5  { width: calculate-width(5,6); }
+
+  // Spatial units in sevenths
+    
+  .#{$pre}grid--divide-7  >  .#{$pre}grid_unit--span-2  { width: calculate-width(2,7); }
+  .#{$pre}grid--divide-7  >  .#{$pre}grid_unit--span-3  { width: calculate-width(3,7); }
+  .#{$pre}grid--divide-7  >  .#{$pre}grid_unit--span-4  { width: calculate-width(4,7); }
+  .#{$pre}grid--divide-7  >  .#{$pre}grid_unit--span-5  { width: calculate-width(5,7); }
+  .#{$pre}grid--divide-7  >  .#{$pre}grid_unit--span-6  { width: calculate-width(6,7); }
+
+  // Spatial units in eights
+    
+  .#{$pre}grid--divide-8  >  .#{$pre}grid_unit--span-2  { width: calculate-width(2,8); }
+  .#{$pre}grid--divide-8  >  .#{$pre}grid_unit--span-3  { width: calculate-width(3,8); }
+  .#{$pre}grid--divide-8  >  .#{$pre}grid_unit--span-4  { width: calculate-width(4,8); }
+  .#{$pre}grid--divide-8  >  .#{$pre}grid_unit--span-5  { width: calculate-width(5,8); }
+  .#{$pre}grid--divide-8  >  .#{$pre}grid_unit--span-6  { width: calculate-width(6,8); }
+  .#{$pre}grid--divide-8  >  .#{$pre}grid_unit--span-7  { width: calculate-width(7,8); }
+
+}
+
+
+// Create CSS
+//-----------------------------------------
+
+@mixin createCSS($breakpoints: false) {
+  
+  @include styles;
+  
+  @if ($breakpoints) {
+    
+    @each $breakpoint in $breakpoints {
+  
+      $prefix: nth($breakpoint, 1);
+      $bp:     nth($breakpoint, 2);
+  
+      @media only screen and (min-width: #{$bp}) {
+    
+        @include styles($prefix); 
+    
+      }
+  
+    }
+    
+  }
+  
+}
+
+
+// Calculate widths
+//-----------------------------------------
+
+@function calculate-width($numerator, $denominator) {
+  @return percentage($numerator / $denominator);
+}
+
+
+// Init
+//-----------------------------------------
+
+@include createCSS($breakpoints);

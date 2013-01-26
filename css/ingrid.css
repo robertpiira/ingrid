@@ -30,9 +30,7 @@
   word-spacing: -0.43em;
 }
 
-.grid,
-.m-grid,
-.l-grid {
+.grid {
   padding: 0;
   list-style: none;
 }
@@ -134,6 +132,8 @@
 @media only screen and (min-width: 480px) {
   
   .m-grid {
+    padding: 0;
+    list-style: none;
     letter-spacing: -0.31em;
     word-spacing: -0.43em;
   }
@@ -222,6 +222,8 @@
 @media only screen and (min-width: 768px) {
   
   .l-grid {
+    padding: 0;
+    list-style: none;
     letter-spacing: -0.31em;
     word-spacing: -0.43em;
   }
