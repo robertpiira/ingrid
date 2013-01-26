@@ -14,8 +14,8 @@
  *
  * Mobile first approach for class names
  *
- * .m_* class prefix is for "above small-sized viewports"
- * .l_* class prefix is for "above medium-sized viewports"
+ * --m* class suffix is for "above small-sized viewports"
+ * --l* class suffix is for "above medium-sized viewports"
  * 
  *---------------------------------------*/
 
@@ -25,21 +25,21 @@
 /* INGRID - All
 -----------------------------------------*/
 
-.container {
+.grid {
   letter-spacing: -0.31em;
   word-spacing: -0.43em;
 }
 
-.container,
-.m_container,
-.l_container {
+.grid,
+.grid--m,
+.grid--l {
   padding: 0;
   list-style: none;
 }
 
-.container > .unit,
-.m_container > .unit,
-.l_container > .unit,
+.grid > .unit,
+.grid--m > .unit,
+.grid--l > .unit,
 .field-unit {
   margin: 0;
   -moz-box-sizing: border-box;
@@ -49,7 +49,7 @@
   word-spacing: normal;
 }
 
-.container > .unit {
+.grid > .unit {
   display: inline-block;
   vertical-align: top;
 }
@@ -64,12 +64,12 @@
 /* GUTTERS - All
 -----------------------------------------*/
 
-.container {
+.grid {
   margin: 0 -1rem;
 }
 
-.container > .unit,
-.container > .field-unit {
+.grid > .unit,
+.grid > .field-unit {
   padding: 0 1rem;
 }
 
@@ -79,13 +79,13 @@
 /* UNITS - All
 -----------------------------------------*/
 
-.divide2  >  .unit  { width: 50%; } 
-.divide3  >  .unit  { width: 33.33333%; }
-.divide4  >  .unit  { width: 25%; } 
-.divide5  >  .unit  { width: 20%; } 
-.divide6  >  .unit  { width: 16.66666%; }
-.divide7  >  .unit  { width: 14.28571%; }
-.divide8  >  .unit  { width: 12.5%; }
+.grid--divide-2  >  .unit  { width: 50%; } 
+.grid--divide-3  >  .unit  { width: 33.33333%; }
+.grid--divide-4  >  .unit  { width: 25%; } 
+.grid--divide-5  >  .unit  { width: 20%; } 
+.grid--divide-6  >  .unit  { width: 16.66666%; }
+.grid--divide-7  >  .unit  { width: 14.28571%; }
+.grid--divide-8  >  .unit  { width: 12.5%; }
 
 
 
@@ -94,37 +94,37 @@
 -----------------------------------------*/
 
 /* Spatial units in thirds */
-.divide3  >  .span2  { width: 66.66666%; }
+.grid--divide-3  >  .unit--span-2  { width: 66.66666%; }
 
 /* Spatial units in fourths */
-.divide4  >  .span2  { width: 50%; }
-.divide4  >  .span3  { width: 75%; }
+.grid--divide-4  >  .unit--span-2  { width: 50%; }
+.grid--divide-4  >  .unit--span-3  { width: 75%; }
 
 /* Spatial units in fifths */
-.divide5  >  .span2  { width: 40%; }
-.divide5  >  .span3  { width: 60%; }
-.divide5  >  .span4  { width: 80%; }
+.grid--divide-5  >  .unit--span-2  { width: 40%; }
+.grid--divide-5  >  .unit--span-3  { width: 60%; }
+.grid--divide-5  >  .unit--span-4  { width: 80%; }
 
 /* Spatial units in sixths */
-.divide6  >  .span2  { width: 33.33333%; }
-.divide6  >  .span3  { width: 50%; }
-.divide6  >  .span4  { width: 66.66666%; }
-.divide6  >  .span5  { width: 83.33333%; }
+.grid--divide-6  >  .unit--span-2  { width: 33.33333%; }
+.grid--divide-6  >  .unit--span-3  { width: 50%; }
+.grid--divide-6  >  .unit--span-4  { width: 66.66666%; }
+.grid--divide-6  >  .unit--span-5  { width: 83.33333%; }
 
 /* Spatial units in sevenths */
-.divide7  >  .span2  { width: 28.57142%; }
-.divide7  >  .span3  { width: 42.85714%; }
-.divide7  >  .span4  { width: 57.14285%; }
-.divide7  >  .span5  { width: 71.42857%; }
-.divide7  >  .span6  { width: 85.71428%; }
+.grid--divide-7  >  .unit--span-2  { width: 28.57142%; }
+.grid--divide-7  >  .unit--span-3  { width: 42.85714%; }
+.grid--divide-7  >  .unit--span-4  { width: 57.14285%; }
+.grid--divide-7  >  .unit--span-5  { width: 71.42857%; }
+.grid--divide-7  >  .unit--span-6  { width: 85.71428%; }
 
 /* Spatial units in eights */
-.divide8  >  .span2  { width: 25%; }
-.divide8  >  .span3  { width: 37.5%; }
-.divide8  >  .span4  { width: 50%; }
-.divide8  >  .span5  { width: 62.5%; }
-.divide8  >  .span6  { width: 75%; }
-.divide8  >  .span7  { width: 87.5%; }
+.grid--divide-8  >  .unit--span-2  { width: 25%; }
+.grid--divide-8  >  .unit--span-3  { width: 37.5%; }
+.grid--divide-8  >  .unit--span-4  { width: 50%; }
+.grid--divide-8  >  .unit--span-5  { width: 62.5%; }
+.grid--divide-8  >  .unit--span-6  { width: 75%; }
+.grid--divide-8  >  .unit--span-7  { width: 87.5%; }
 
 
 
@@ -135,12 +135,12 @@
 
 @media only screen and (min-width: 480px) {
   
-  .m_container {
+  .grid--m {
     letter-spacing: -0.31em;
     word-spacing: -0.43em;
   }
   
-  .m_container > .unit {
+  .grid--m > .unit {
     display: inline-block;
     vertical-align: top;
   }
@@ -148,69 +148,69 @@
 
 
 
-  /* GUTTERS - Small and up
+  /* GUTTERS - Above small-sized viewports
   ---------------------------------------*/
 
-  .m_container {
+  .grid--m {
     margin: 0 -1rem;
   }
 
-  .m_container > .unit,
-  .m_container > .field-unit {
+  .grid--m > .unit,
+  .grid--m > .field-unit {
     padding: 0 1rem;
   }
   
 
 
 
-  /* UNITS - Small and up
+  /* UNITS - Above small-sized viewports
   ---------------------------------------*/
 
-  .m_divide2  >  .unit  { width: 50%; } 
-  .m_divide3  >  .unit  { width: 33.33333%; }
-  .m_divide4  >  .unit  { width: 25%; } 
-  .m_divide5  >  .unit  { width: 20%; } 
-  .m_divide6  >  .unit  { width: 16.66666%; }
-  .m_divide7  >  .unit  { width: 14.28571%; }
-  .m_divide8  >  .unit  { width: 12.5%; }
+  .grid--m--divide-2  >  .unit  { width: 50%; } 
+  .grid--m--divide-3  >  .unit  { width: 33.33333%; }
+  .grid--m--divide-4  >  .unit  { width: 25%; } 
+  .grid--m--divide-5  >  .unit  { width: 20%; } 
+  .grid--m--divide-6  >  .unit  { width: 16.66666%; }
+  .grid--m--divide-7  >  .unit  { width: 14.28571%; }
+  .grid--m--divide-8  >  .unit  { width: 12.5%; }
 
 
 
-  /* SPATIALS - Small and up
+  /* SPATIALS - Above small-sized viewports
   ---------------------------------------*/
 
   /* Spatial units in thirds */
-  .m_divide3  >  .m_span2  { width: 66.66666%; }
+  .grid--m--divide-3  >  .unit--m--span-2  { width: 66.66666%; }
 
   /* Spatial units in fourths */
-  .m_divide4  >  .m_span2  { width: 50%; }
-  .m_divide4  >  .m_span3  { width: 75%; }
+  .grid--m--divide-4  >  .unit--m--span-2  { width: 50%; }
+  .grid--m--divide-4  >  .unit--m--span-3  { width: 75%; }
 
   /* Spatial units in fifths */
-  .m_divide5  >  .m_span2  { width: 40%; }
-  .m_divide5  >  .m_span3  { width: 60%; }
-  .m_divide5  >  .m_span4  { width: 80%; }
+  .grid--m--divide-5  >  .unit--m--span-2  { width: 40%; }
+  .grid--m--divide-5  >  .unit--m--span-3  { width: 60%; }
+  .grid--m--divide-5  >  .unit--m--span-4  { width: 80%; }
 
   /* Spatial units in sixths */
-  .m_divide6  >  .m_span2  { width: 33.33333%; }
-  .m_divide6  >  .m_span3  { width: 50%; }
-  .m_divide6  >  .m_span4  { width: 66.66666%; }
-  .m_divide6  >  .m_span5  { width: 83.33333%; }
+  .grid--m--divide-6  >  .unit--m--span-2  { width: 33.33333%; }
+  .grid--m--divide-6  >  .unit--m--span-3  { width: 50%; }
+  .grid--m--divide-6  >  .unit--m--span-4  { width: 66.66666%; }
+  .grid--m--divide-6  >  .unit--m--span-5  { width: 83.33333%; }
 
   /* Spatial units in sevenths */
-  .m_divide7  >  .m_span2  { width: 28.57142%; }
-  .m_divide7  >  .m_span3  { width: 42.85714%; }
-  .m_divide7  >  .m_span4  { width: 57.14285%; }
-  .m_divide7  >  .m_span5  { width: 71.42857%; }
-  .m_divide7  >  .m_span6  { width: 85.71428%; }
+  .grid--m--divide-7  >  .unit--m--span-2  { width: 28.57142%; }
+  .grid--m--divide-7  >  .unit--m--span-3  { width: 42.85714%; }
+  .grid--m--divide-7  >  .unit--m--span-4  { width: 57.14285%; }
+  .grid--m--divide-7  >  .unit--m--span-5  { width: 71.42857%; }
+  .grid--m--divide-7  >  .unit--m--span-6  { width: 85.71428%; }
 
   /* Spatial units in eights */
-  .m_divide8  >  .m_span2  { width: 25%; }
-  .m_divide8  >  .m_span3  { width: 37.5%; }
-  .m_divide8  >  .m_span4  { width: 50%; }
-  .m_divide8  >  .m_span5  { width: 62.5%; }
-  .m_divide8  >  .m_span6  { width: 75%; }
-  .m_divide8  >  .m_span7  { width: 87.5%; }
+  .grid--m--divide-8  >  .unit--m--span-2  { width: 25%; }
+  .grid--m--divide-8  >  .unit--m--span-3  { width: 37.5%; }
+  .grid--m--divide-8  >  .unit--m--span-4  { width: 50%; }
+  .grid--m--divide-8  >  .unit--m--span-5  { width: 62.5%; }
+  .grid--m--divide-8  >  .unit--m--span-6  { width: 75%; }
+  .grid--m--divide-8  >  .unit--m--span-7  { width: 87.5%; }
   
 }
 
@@ -223,12 +223,12 @@
 
 @media only screen and (min-width: 768px) {
   
-  .l_container {
+  .grid--l {
     letter-spacing: -0.31em;
     word-spacing: -0.43em;
   }
   
-  .l_container > .unit {
+  .grid--l > .unit {
     display: inline-block;
     vertical-align: top;
   }
@@ -236,68 +236,68 @@
 
 
 
-  /* GUTTERS - Medium and up
+  /* GUTTERS - Above medium-sized viewports
   ---------------------------------------*/
   
-  .l_container {
+  .grid--l {
     margin: 0 -1rem;
   }
   
-  .l_container > .unit,
-  .l_container > .field-unit {
+  .grid--l > .unit,
+  .grid--l > .field-unit {
     padding: 0 1rem;
   }
 
 
 
 
-  /* UNITS - Medium and up
+  /* UNITS - Above medium-sized viewports
   ---------------------------------------*/
   
-  .l_divide2  >  .unit  { width: 50%; } 
-  .l_divide3  >  .unit  { width: 33.33333%; }
-  .l_divide4  >  .unit  { width: 25%; } 
-  .l_divide5  >  .unit  { width: 20%; } 
-  .l_divide6  >  .unit  { width: 16.66666%; }
-  .l_divide7  >  .unit  { width: 14.28571%; }
-  .l_divide8  >  .unit  { width: 12.5%; }
+  .grid--l--divide-2  >  .unit  { width: 50%; } 
+  .grid--l--divide-3  >  .unit  { width: 33.33333%; }
+  .grid--l--divide-4  >  .unit  { width: 25%; } 
+  .grid--l--divide-5  >  .unit  { width: 20%; } 
+  .grid--l--divide-6  >  .unit  { width: 16.66666%; }
+  .grid--l--divide-7  >  .unit  { width: 14.28571%; }
+  .grid--l--divide-8  >  .unit  { width: 12.5%; }
 
 
 
-  /* SPATIALS - Medium and up
+  /* SPATIALS - Above medium-sized viewports
   ---------------------------------------*/
 
   /* Spatial units in thirds */
-  .l_divide3  >  .l_span2  { width: 66.66666%; }
+  .grid--l--divide-3  >  .unit--l--span-2  { width: 66.66666%; }
 
   /* Spatial units in fourths */
-  .l_divide4  >  .l_span2  { width: 50%; }
-  .l_divide4  >  .l_span3  { width: 75%; }
+  .grid--l--divide-4  >  .unit--l--span-2  { width: 50%; }
+  .grid--l--divide-4  >  .unit--l--span-3  { width: 75%; }
 
   /* Spatial units in fifths */
-  .l_divide5  >  .l_span2  { width: 40%; }
-  .l_divide5  >  .l_span3  { width: 60%; }
-  .l_divide5  >  .l_span4  { width: 80%; }
+  .grid--l--divide-5  >  .unit--l--span-2  { width: 40%; }
+  .grid--l--divide-5  >  .unit--l--span-3  { width: 60%; }
+  .grid--l--divide-5  >  .unit--l--span-4  { width: 80%; }
 
   /* Spatial units in sixths */
-  .l_divide6  >  .l_span2  { width: 33.33333%; }
-  .l_divide6  >  .l_span3  { width: 50%; }
-  .l_divide6  >  .l_span4  { width: 66.66666%; }
-  .l_divide6  >  .l_span5  { width: 83.33333%; }
+  .grid--l--divide-6  >  .unit--l--span-2  { width: 33.33333%; }
+  .grid--l--divide-6  >  .unit--l--span-3  { width: 50%; }
+  .grid--l--divide-6  >  .unit--l--span-4  { width: 66.66666%; }
+  .grid--l--divide-6  >  .unit--l--span-5  { width: 83.33333%; }
 
   /* Spatial units in sevenths */
-  .l_divide7  >  .l_span2  { width: 28.57142%; }
-  .l_divide7  >  .l_span3  { width: 42.85714%; }
-  .l_divide7  >  .l_span4  { width: 57.14285%; }
-  .l_divide7  >  .l_span5  { width: 71.42857%; }
-  .l_divide7  >  .l_span6  { width: 85.71428%; }
+  .grid--l--divide-7  >  .unit--l--span-2  { width: 28.57142%; }
+  .grid--l--divide-7  >  .unit--l--span-3  { width: 42.85714%; }
+  .grid--l--divide-7  >  .unit--l--span-4  { width: 57.14285%; }
+  .grid--l--divide-7  >  .unit--l--span-5  { width: 71.42857%; }
+  .grid--l--divide-7  >  .unit--l--span-6  { width: 85.71428%; }
 
   /* Spatial units in eights */
-  .l_divide8  >  .l_span2  { width: 25%; }
-  .l_divide8  >  .l_span3  { width: 37.5%; }
-  .l_divide8  >  .l_span4  { width: 50%; }
-  .l_divide8  >  .l_span5  { width: 62.5%; }
-  .l_divide8  >  .l_span6  { width: 75%; }
-  .l_divide8  >  .l_span7  { width: 87.5%; }
+  .grid--l--divide-8  >  .unit--l--span-2  { width: 25%; }
+  .grid--l--divide-8  >  .unit--l--span-3  { width: 37.5%; }
+  .grid--l--divide-8  >  .unit--l--span-4  { width: 50%; }
+  .grid--l--divide-8  >  .unit--l--span-5  { width: 62.5%; }
+  .grid--l--divide-8  >  .unit--l--span-6  { width: 75%; }
+  .grid--l--divide-8  >  .unit--l--span-7  { width: 87.5%; }
 
 }
