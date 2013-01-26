@@ -87,7 +87,7 @@ This is how the layout would look like on a narrow screen.
 
 …and once the breakpoint for `.m_*` prefixed classnames kicks in  for above narrow screens — the layout will reflow into two horizontally stacked columns.
 
-		+-------------------[c]-------------------+
+    +-------------------[c]-------------------+
     | +-----------------+ +-----------------+ |
     | |                 | |                 | |
     | |       [u]       | |       [u]       | |
@@ -135,7 +135,7 @@ Ingrid 2.0 includes two breakpoints and the CSS is structured in a mobile first 
 
 It's up to you to see what breakpoints make sense in your project. The breakpoints that are included with Ingrid can (and probably should) be modified so that they match your content.
 
-*= To be totally correct, there are three breakpoints in total, for, "The absence of support for @media queries is in fact the first @media query." —[Bryan Rieger](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu)
+*= To be correct, there are three breakpoints in total, for, "The absence of support for @media queries is in fact the first @media query." —[Bryan Rieger](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu)
 
 Browser support
 ---------------
