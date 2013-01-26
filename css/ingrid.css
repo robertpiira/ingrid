@@ -14,8 +14,8 @@
  *
  * Mobile first approach for class names
  *
- * .l_* class prefix is for "small and up"
- * .l_* class prefix is for "medium and up"
+ * .m_* class prefix is for "above small-sized viewports"
+ * .l_* class prefix is for "above medium-sized viewports"
  * 
  *---------------------------------------*/
 
