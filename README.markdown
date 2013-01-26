@@ -10,7 +10,7 @@ Ingrid version 2.0 includes
 2. More generic and simplified class naming conventions, and…
 3. a bunch more column width variations.
 
-Check out Ingrid in use at <http://codepen.io/robertpiira/pen/kofpu>.
+Check out Ingrid in use at <http://codepen.io/robertpiira/pen/kofpu>. Or the plain demo page ay <http://codepen.io/robertpiira/full/kofpu>
 
 The previous Ingrid 1.0 will live on in its ingrid_1.0 branch.
 
