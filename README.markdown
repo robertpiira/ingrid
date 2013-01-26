@@ -7,8 +7,9 @@ Ingrid version 2.0 includes
 ---------------------------
 
 1. Media queries for responsive layout support
-2. More generic and simplified class naming conventions, and…
-3. a bunch more column width variations.
+2. A SCSS version with a couple of customization settings
+3. Better structured class naming conventions, and…
+4. a bunch more column width variations.
 
 Check out Ingrid in use at <http://codepen.io/robertpiira/pen/kofpu>. Or the plain demo page at <http://codepen.io/robertpiira/full/kofpu>
 
