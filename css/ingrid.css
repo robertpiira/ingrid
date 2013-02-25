@@ -27,7 +27,6 @@
 
 .grid {
   letter-spacing: -0.31em;
-  word-spacing: -0.43em;
 }
 
 .grid {
@@ -42,7 +41,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   letter-spacing: normal;
-  word-spacing: normal;
 }
 
 .grid > .grid_unit {
@@ -135,7 +133,6 @@
     padding: 0;
     list-style: none;
     letter-spacing: -0.31em;
-    word-spacing: -0.43em;
   }
   
   .m-grid > .grid_unit {
@@ -225,7 +222,6 @@
     padding: 0;
     list-style: none;
     letter-spacing: -0.31em;
-    word-spacing: -0.43em;
   }
   
   .l-grid > .grid_unit {

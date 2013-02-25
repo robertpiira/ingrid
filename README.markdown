@@ -7,7 +7,7 @@ Ingrid version 2.0 includes
 ---------------------------
 
 1. Media queries for responsive layout support
-2. A SCSS version with a couple of customization settings
+2. A SCSS version with a couple of neat customization settings
 3. Better structured class naming conventions, and…
 4. a bunch more column width variations.
 

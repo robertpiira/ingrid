@@ -17,8 +17,8 @@
 // 2. $breakpoints variable should be set to false if you don't need media queries for your layout.
 // 3. $gutters variable can be set to any unit, example: '20px', or '2%' etc. Don't forget that relative units in $gutters argument will be affected when nesting grids.
 
-$breakpoints: (medium, 45em), (large, 65em), (xlarge, 85em);
-$gutters: 2rem;
+$breakpoints: (medium, 45em), (large, 65em), (xlarge, 85em) !default;
+$gutters: 2rem !default;
  
 
 // Styles
@@ -41,7 +41,6 @@ $gutters: 2rem;
     padding: 0;
     list-style: none;
     letter-spacing: -0.31em;
-    word-spacing: -0.43em;
   }
 
   @if ($prefix == false) {
@@ -53,7 +52,6 @@ $gutters: 2rem;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       letter-spacing: normal;
-      word-spacing: normal;
     }
     
     .grid_field-unit  {
